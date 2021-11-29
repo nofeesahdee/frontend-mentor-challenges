@@ -1,6 +1,6 @@
 # Frontend-mentor-challenges
 
-## Welcome, this is a repository containing all my solutions to the Frontend Mentor Challenges.
+## Welcome, this is a repository containing all of my solutions to the Frontend Mentor Challenges.
 
 ### Newbie Projects
 
