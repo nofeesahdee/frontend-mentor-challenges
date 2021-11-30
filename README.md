@@ -7,5 +7,5 @@
 ##### 1. NFT preview card component
 
 * Live Site: https://nft-preview-card-drab.vercel.app/
-* Solution:
+* Solution: https://github.com/nofeesahdee/Frontend-mentor-challenges/tree/main/nft-preview-card-component-main
 
