@@ -4,8 +4,8 @@
 
 ### Newbie Projects
 
-#### 1. Single Price Grid
+#### 1. NFT preview card component
 
-* Live Site: (https://price-grid-plum.vercel.app/)
+* Live Site: 
 * Solution:
 
