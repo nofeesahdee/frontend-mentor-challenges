@@ -6,6 +6,6 @@
 
 ##### 1. NFT preview card component
 
-* Live Site: 
+* Live Site: https://nft-preview-card-drab.vercel.app/
 * Solution:
 
