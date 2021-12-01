@@ -12,4 +12,4 @@
 ##### 2. Order Summary Coponent
 
 * Live Site : https://order-summary-component-flame.vercel.app/
-* Solution : 
+* Solution : https://github.com/nofeesahdee/Frontend-mentor-challenges/tree/main/order-summary-main
