@@ -17,4 +17,4 @@
 ##### 3. Stats Preview Component
 
 * Live Site : https://stats-preview-jocqgkzhv-nofeesahdee.vercel.app/
-* Solution :
+* Solution : https://github.com/nofeesahdee/Frontend-mentor-challenges/tree/main/stats-preview-main
