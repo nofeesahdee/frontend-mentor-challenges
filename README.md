@@ -11,5 +11,10 @@
 
 ##### 2. Order Summary Coponent
 
-* Live Site : https://order-summary-component-flame.vercel.app/
-* Solution : https://github.com/nofeesahdee/Frontend-mentor-challenges/tree/main/order-summary-main
+* Live Site : (https://order-summary-component-flame.vercel.app/)
+* Solution : (https://github.com/nofeesahdee/Frontend-mentor-challenges/tree/main/order-summary-main)
+
+##### 3. Stats Preview Component
+
+* Live Site : https://stats-preview-jocqgkzhv-nofeesahdee.vercel.app/
+* Solution :
