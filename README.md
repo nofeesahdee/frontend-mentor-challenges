@@ -18,3 +18,7 @@
 
 * [Live Site](https://stats-preview-jocqgkzhv-nofeesahdee.vercel.app/)
 * [Solution](https://github.com/nofeesahdee/Frontend-mentor-challenges/tree/main/stats-preview-main)
+
+##### 4. 3 Column Preview Card
+
+* [Live Site]
