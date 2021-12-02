@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image:linear-gradient(to bottom, hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family:'Kumbh Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    margin: 40px;
+    max-width: 90%;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-side{
+    position: relative;
+    background-image: url(/images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+}
+.left-side .box{
+    position: absolute;
+    padding: 0;
+    top: 40%;
+    left: -25%;
+    overflow: visible;
+}
+.left-side .woman-box{
+    overflow: hidden;
+}
+.left-side .woman{
+    margin-left:-80px;
+}
+.right-side{
+    padding: 30px;
+    width: 500px;
+}
+h1{
+    text-transform: uppercase;
+}
+.details{
+    position: relative;
+    border-bottom: 2px solid hsl(240, 5%, 91%);
+    cursor: pointer;
+}
+.questions{
+  position: relative;
+}
+.questions p{
+    color:hsl(237, 12%, 33%);
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 18px;
+}
+.questions img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.answer{
+    font-size: 15px;
+    color: hsl(237, 12%, 33%);
+    max-height: 0;
+    overflow: hidden;
+    line-height: 20px;
+    transition: max-height 1.4s ease;
+}
+.details.active .answer{
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+.details.active img{
+    transform: rotate(180deg);
+}
+.details.active p{
+    font-weight: 700;
+    color:hsl(238, 29%, 16%);
+}
+img{
+    transition: transform .5s ease-in;
+}
+@keyframes fade{
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@media (max-width:900px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        max-width: 800px;
+    }
+    h1{
+        text-align: center;
+    }
+    .left-side{
+        background-image: url(/images/bg-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+        position: relative;
+        display: flex;
+        margin-top: 50%;
+    }
+    .left-side .box{
+        /* position: absolute;
+        margin: 0%; */
+        /* top: 40%;
+        left: -25%; */
+    }
+    .left-side .woman-box{
+        overflow: visible;
+        margin-top: -50%;
+    }
+    .left-side .woman-box .woman{
+        margin-left: 0;
+    }
+}
