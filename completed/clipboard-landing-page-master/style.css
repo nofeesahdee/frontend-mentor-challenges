@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(/images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+}
+header .logo{
+    align-self: center;
+    margin-top: 80px;
+}
+.text{
+    align-self: center;
+    text-align: center;
+    font-family: inherit;
+    max-width: 500px;
+    margin: 30px 0;
+}
+h1, h2, h3{
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+}
+p{
+    color:hsl(201, 11%, 66%) ;
+}
+button{
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 600;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+button:hover{
+    transform: scale(0.96);
+}
+.btn-1{
+    background-color: hsl(171, 66%, 44%);
+    border: 1px solid hsl(171, 66%, 44%);
+}
+.btn-2{
+    background-color: hsl(233, 100%, 69%);
+    border: 1px solid hsl(233, 100%, 69%);
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 50px;
+    width: 100%;
+}
+.details{
+    display: flex;
+    margin-top: 30px;
+}
+.details img{
+    width: 60%;
+    margin-left: -100px;
+}
+.details-text{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin-left: 80px;
+    justify-content: center;
+    
+}
+.details .text2{
+    margin-bottom: 10px;
+}
+.details .text2 h3{
+    margin-bottom: 5px;
+}
+.details .text2 p{
+    margin-top: 0;
+    line-height: 30px;
+}
+section .image-device{
+    width: 60%;
+    align-self: center;
+}
+section .text{
+    margin-top: 0;
+}
+.icons{
+    display: flex;
+    justify-content:space-around;
+    text-align: center; 
+}
+.icon-section{
+    padding: 20px;
+    margin: 20px;
+    max-width: 400px;
+}
+.companies{
+    display: flex;
+    justify-content: space-around;
+}
+.companies img{
+    width: 100px;
+    height: 35px;
+    margin-top: 20px;
+}
+.available{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    display: flex;
+    background-color:rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 50px;
+    justify-content: space-around;
+    padding: 40px;
+}
+footer img{
+    width: 50px;
+    height: 50px;
+    align-self: center;
+}
+footer ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a{
+    text-decoration: none;
+    font-family: inherit;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 20px 0 0 40px;
+}
+footer .socials{
+    display: flex;
+    justify-content: space-between; 
+}
+footer .socials img{
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+}
+@media (max-width:650px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px auto;
+    }
+    button{
+        display:block;
+        align-self: center;
+        margin-bottom: 20px;
+        width: 300px;
+    }
+    .text{
+        margin-left:20px;
+        margin-right:20px;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .details img{
+        align-self: center;
+        margin: 0;
+    }
+    .details .details-text{
+        align-self: center;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .icons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .companies{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .companies img{
+        margin-bottom: 5px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    footer img{
+        align-self: center;
+    }
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top:30px;
+    }
+    footer ul li{
+        margin-bottom: 10px;
+    }
+    footer ul li a{
+        margin: 0;
+    }
+    footer .socials{
+        display: flex;
+        margin: 10px;
+        justify-content: center;
+    }
+    footer .socials img{
+        margin-left: 25px;
+    }
+}
