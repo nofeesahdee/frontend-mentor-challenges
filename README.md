@@ -23,3 +23,8 @@
 
 * [Live Site](https://nofeesahdee.github.io/Frontend-mentor-challenges/3-column-preview-card-main/)
 * [Solution](https://github.com/nofeesahdee/Frontend-mentor-challenges/tree/master/3-column-preview-card-main)
+
+##### 5. Article Preview Component
+
+*[Live Site](https://nofeesahdee.github.io/Frontend-mentor-challenges/article-preview-component-master/)
+*[Solution](
