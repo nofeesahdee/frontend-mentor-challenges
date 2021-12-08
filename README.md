@@ -50,3 +50,8 @@
 
 * [Live Site](https://nofeesahdee.github.io/Frontend-mentor-challenges/blogr-landing-page-main/)
 * [Solution](https://github.com/nofeesahdee/Frontend-mentor-challenges/tree/master/blogr-landing-page-main)
+
+##### 3. Fylo Dark Theme Landing Page
+
+* [Live Site](https://nofeesahdee.github.io/Frontend-mentor-challenges/fylo-dark-theme-landing-page-master/)
+* [Solution](https://github.com/nofeesahdee/Frontend-mentor-challenges/tree/master/fylo-dark-theme-landing-page-master)
