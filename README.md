@@ -37,4 +37,4 @@
 ##### 7. Profile Card Component
 
 * [Live Site](https://nofeesahdee.github.io/Frontend-mentor-challenges/profile-card-component-main/)
-* [Solution]()
+* [Solution](https://github.com/nofeesahdee/Frontend-mentor-challenges/tree/master/profile-card-component-main)
