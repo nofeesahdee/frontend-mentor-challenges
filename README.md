@@ -45,3 +45,8 @@
 
 * [Live Site](https://nofeesahdee.github.io/Frontend-mentor-challenges/clipboard-landing-page-master/)
 * [Solution](https://github.com/nofeesahdee/Frontend-mentor-challenges/tree/master/clipboard-landing-page-master)
+
+##### 2. Blogr Landing Page
+
+* [Live Site](https://nofeesahdee.github.io/Frontend-mentor-challenges/blogr-landing-page-main/)
+* [Solution](https://github.com/nofeesahdee/Frontend-mentor-challenges/tree/master/blogr-landing-page-main)
