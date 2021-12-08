@@ -33,3 +33,8 @@
 
 * [Live Site](https://nofeesahdee.github.io/Frontend-mentor-challenges/faq-accordion-card-main/)
 * [Solution](https://github.com/nofeesahdee/Frontend-mentor-challenges/tree/master/faq-accordion-card-main)
+
+##### 7. Profile Card Component
+
+* [Live Site](https://nofeesahdee.github.io/Frontend-mentor-challenges/profile-card-component-main/)
+* [Solution]()
