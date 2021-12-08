@@ -26,5 +26,5 @@
 
 ##### 5. Article Preview Component
 
-*[Live Site](https://nofeesahdee.github.io/Frontend-mentor-challenges/article-preview-component-master/)
-*[Solution](
+* [Live Site](https://nofeesahdee.github.io/Frontend-mentor-challenges/article-preview-component-master/)
+* [Solution](https://github.com/nofeesahdee/Frontend-mentor-challenges/tree/master/article-preview-component-master)
