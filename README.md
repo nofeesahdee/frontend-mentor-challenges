@@ -38,3 +38,10 @@
 
 * [Live Site](https://nofeesahdee.github.io/Frontend-mentor-challenges/profile-card-component-main/)
 * [Solution](https://github.com/nofeesahdee/Frontend-mentor-challenges/tree/master/profile-card-component-main)
+
+### Junior Projects
+
+##### 1. Clipboard Landing Page
+
+* [Live Site](https://nofeesahdee.github.io/Frontend-mentor-challenges/clipboard-landing-page-master/)
+* [Solution]()
