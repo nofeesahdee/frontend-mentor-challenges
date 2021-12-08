@@ -14,11 +14,12 @@ body{
 }
 h1,h2,h3 {
     font-family: 'Raleway', sans-serif;
-    margin-bottom: 20px 0;
+    margin-bottom: 20px ;
 }
 p{
-    font-size: 14px;
+    font-size: 18px;
     opacity: 0.7;
+    margin-bottom: 20px ;
 }
 header{
     display: flex;
@@ -28,7 +29,7 @@ header{
     left: 0;
     width: 100%;
     color:  hsl(0, 0%, 100%);
-    padding:40px 100px;
+    padding:50px 100px 20px 100px;
     background-color: hsl(219, 30%, 18%);
 }
 header ul{
@@ -37,7 +38,7 @@ header ul{
 header ul li{
     list-style: none;
     margin-left: 40px;
-    font-size: 14px;
+    font-size: 18px;
     cursor: pointer;
 }
 main{
@@ -49,14 +50,14 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding:50px 0;
+    padding:30px 0;
     background-image: url(/images/bg-curvy-desktop.svg);
     background-repeat: no-repeat;
     background-size:contain;
     background-position: bottom;
 }
 main img{
-    width: 50%;
+    width: 40%;
     margin-bottom: 20px;
 }
 main .text{
@@ -86,7 +87,7 @@ main button{
 .section-1{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 100px 50px;
+    padding: 30px 100px;
     text-align: center;
     place-items: center;
     width: 100%;
@@ -103,7 +104,7 @@ section .section-body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 50px 100px;
+    padding: 30px 100px;
     color:hsl(0, 0%, 100%);
     background-color: hsl(218, 28%, 13%);
 }
@@ -129,7 +130,7 @@ section .section-body{
 }
 .testimonials{
     display: flex;
-    margin: 90px 0;
+    margin: 90px 0 250px 0;
     background-image: url(/images/bg-quotes.png);
     background-repeat: no-repeat;
 }
@@ -231,7 +232,6 @@ footer .info .info-body p{
 }
 .info-body ul li{
     list-style: none;
-    font-size: 14px;
     opacity: 0.7;
     cursor: pointer;
 }
@@ -268,21 +268,22 @@ footer .info .info-body p{
         align-items: center;
         justify-content: center;    
     }
-    .productive .illustration{
-        /* margin-bottom: 15px;
-        width: 80%; */
+    .productive img{
+        margin-bottom: 15px;
+        width: 80%;
     }
     .testimonials{
         display: flex;
         flex-direction: column;
-        max-width: 400px;
+        max-width: 350px;
+        margin-bottom: 150px;
     }
     footer .early-access{
         max-width: 350px;
         padding: 15px;
     }
     footer .info{
-        padding-top:150px;  
+        padding:200px;  
     }
     .info-body{
         display: flex;
