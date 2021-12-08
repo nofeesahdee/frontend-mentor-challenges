@@ -21,4 +21,5 @@
 
 ##### 4. 3 Column Preview Card
 
-* [Live Site]
+* [Live Site](https://nofeesahdee.github.io/Frontend-mentor-challenges/3-column-preview-card-main/)
+* [Solution](https://github.com/nofeesahdee/Frontend-mentor-challenges/tree/master/3-column-preview-card-main)
