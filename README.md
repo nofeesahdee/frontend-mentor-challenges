@@ -28,3 +28,8 @@
 
 * [Live Site](https://nofeesahdee.github.io/Frontend-mentor-challenges/article-preview-component-master/)
 * [Solution](https://github.com/nofeesahdee/Frontend-mentor-challenges/tree/master/article-preview-component-master)
+
+##### 6. FAQ Accordion
+
+* [Live Site]
+* [Solution](https://github.com/nofeesahdee/Frontend-mentor-challenges/tree/master/faq-accordion-card-main)
