@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3 {
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px 0;
+}
+p{
+    font-size: 14px;
+    opacity: 0.7;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color:  hsl(0, 0%, 100%);
+    padding:40px 100px;
+    background-color: hsl(219, 30%, 18%);
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    list-style: none;
+    margin-left: 40px;
+    font-size: 14px;
+    cursor: pointer;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(219, 30%, 18%);
+    color:  hsl(0, 0%, 100%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:50px 0;
+    background-image: url(/images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: bottom;
+}
+main img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+main .text{
+    max-width: 480px;
+}
+button{
+    background-color:  hsl(198, 60%, 50%);
+    color:  hsl(0, 0%, 100%);
+    width: 300px;
+    border: 1px solid  hsl(198, 60%, 50%);
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+button:hover{
+    transform: scale(0.98);
+    background-color:hsl(176, 68%, 64%);
+    border: 1px solid  hsl(176, 68%, 64%);
+}
+main button{
+    margin-top: 10px;
+}
+.section-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 50px;
+    text-align: center;
+    place-items: center;
+    width: 100%;
+    color:hsl(0, 0%, 100%);
+    background-color: hsl(218, 28%, 13%);
+}
+section .section-body{
+    margin-bottom: 30px;
+    max-width: 400px;
+}
+.section-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px 100px;
+    color:hsl(0, 0%, 100%);
+    background-color: hsl(218, 28%, 13%);
+}
+.section-2 .productive{
+    display: flex;
+    justify-content: space-between;
+}
+.section-2 .productive .illustration{
+    width:50%;
+}
+.text3{
+    align-self: center;
+    margin-left: 50px;
+}
+.text3 a{
+    text-decoration:none;
+    color: hsl(176, 68%, 64%);
+    border-bottom: 2px solid hsl(176, 68%, 64%);
+}
+.text3 a:hover{
+    color:hsl(0, 0%, 100%);
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+}
+.testimonials{
+    display: flex;
+    margin: 90px 0;
+    background-image: url(/images/bg-quotes.png);
+    background-repeat: no-repeat;
+}
+.testimonial-body{
+    background-color: hsl(217, 28%, 15%);
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.testimonial-body img{
+    border-radius: 50%;
+    max-width: 50px;
+    height: 50px;
+}
+.avatar{
+    display: flex;
+    margin-top: 10px;
+}
+.avatar-text{
+   margin: 0;
+}
+.avatar-text h3{
+    margin: 0 0 10px 15px;
+    font-size: 14px;
+}
+.avatar-text p{
+    margin: 0 0 10px 15px;
+    font-size: 10px;
+}
+footer{
+    position: relative;
+    background-color: hsl(216, 53%, 9%);
+    color:hsl(0, 0%, 100%) ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:50px 100px;
+}
+footer .early-access{
+    position: absolute;
+    background-color: hsl(218, 28%, 13%);
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 600px;
+    top: -50%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+form{
+    margin: 10px 0;
+}
+.form-control{
+    margin-top: 30px;
+}
+.form-control input{
+    padding: 10px;
+    border-radius: 30px;
+    width: 300px;
+    border:none;
+}
+.form-control button{
+    width: 200px;
+}
+.form-control small{
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: inherit;
+    font-weight: 700;
+    visibility: hidden;
+}
+.form-control.error input{
+    border:2px solid hsl(0, 100%, 74%);
+}
+.form-control.error small{
+    visibility: visible;
+    color: hsl(0, 100%, 74%);
+}
+.form-control.success input{
+    border:2px solid hsl(154, 59%, 51%);
+}
+footer .info{
+    padding-top: 100px;
+    width: 100%;
+}
+footer .info .info-body{
+    display: flex;
+    justify-content: space-between;
+}
+footer .info .info-body p{
+    max-width: 300px;
+}
+.info-body ul li{
+    list-style: none;
+    font-size: 14px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.info-body p img{
+    margin-right: 20px;
+}
+.info-body ul li:hover{
+    opacity: 1;
+}
+@media(max-width:700px){
+    header {
+        padding:40px;
+    }
+    header ul{
+        display: none;
+    }
+    main img{
+        width: 80%;
+    }
+    .section-1{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-2{
+        padding: 15px;
+    }
+    .section-2 .productive{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+    }
+    .productive .illustration{
+        /* margin-bottom: 15px;
+        width: 80%; */
+    }
+    .testimonials{
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+    }
+    footer .early-access{
+        max-width: 350px;
+        padding: 15px;
+    }
+    footer .info{
+        padding-top:150px;  
+    }
+    .info-body{
+        display: flex;
+        flex-direction: column;
+    }
+    .form-control{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-control input{
+        display: block;
+        margin-bottom: 15px;
+        width: 300px;
+    }
+    .form-control button{
+        width: 300px;
+        display: block;
+        margin-bottom: 0;
+    }
+    footer .early-access{
+        margin-top: 300px;
+    }
+   .info{
+       margin:10px;
+       text-align: left;
+   }
+   .info-body p{
+        margin-bottom:20px;
+    }
+}
