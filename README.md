@@ -31,5 +31,5 @@
 
 ##### 6. FAQ Accordion
 
-* [Live Site]
+* [Live Site](https://nofeesahdee.github.io/Frontend-mentor-challenges/faq-accordion-card-main/)
 * [Solution](https://github.com/nofeesahdee/Frontend-mentor-challenges/tree/master/faq-accordion-card-main)
