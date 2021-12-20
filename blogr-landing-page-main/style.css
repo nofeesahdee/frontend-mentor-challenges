@@ -50,6 +50,7 @@ header nav .logo{
 }
 .dropbtn img{
     margin-left:10px;
+    transition: transform 0.4s ease;
 }
 .dropbtn:hover{
     transform: scale(0.98);
@@ -73,7 +74,7 @@ header nav .logo{
 }
 .dropdown-content a{
     color: hsl(0, 0%, 0%);
-    padding: 15px 20px;
+    padding:15px 5px;
     text-decoration: none;
     display: block;
     margin-left: 30px;
@@ -266,6 +267,6 @@ h1, h2, h3, h4, h5, h6{
 p{
     font-family: 'Overpass', sans-serif;
 }
-@media (max-width:850){
+@media (max-width:850px){
 
 }
