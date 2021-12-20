@@ -2,7 +2,7 @@
 
 ## Welcome 👋, this is a repository containing all of my solutions to the Frontend Mentor Challenges.
 
-### Newbie Projects
+## Newbie Projects
 
 ##### 1. NFT preview card component
 
@@ -39,7 +39,7 @@
 * [Live Site](https://nofeesahdee.github.io/Frontend-mentor-challenges/profile-card-component-main/)
 * [Solution](https://github.com/nofeesahdee/Frontend-mentor-challenges/tree/master/profile-card-component-main)
 
-### Junior Projects
+## Junior Projects
 
 ##### 1. Clipboard Landing Page
 
@@ -55,3 +55,13 @@
 
 * [Live Site](https://nofeesahdee.github.io/Frontend-mentor-challenges/fylo-dark-theme-landing-page-master/)
 * [Solution](https://github.com/nofeesahdee/Frontend-mentor-challenges/tree/master/fylo-dark-theme-landing-page-master)
+
+##### 4. Sunnyside Agency Landing Page
+
+* [Live Site]()
+* [Solution]()
+
+##### 5. Time Tracking
+
+* [Live Site]()
+* [Solution]()
