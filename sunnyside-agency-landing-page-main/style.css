@@ -220,7 +220,7 @@ article h3{
     width: 25%;
 }
 footer{
-    background-color: hsl(168, 34%, 41%);
+    background-color: hsla(168, 34%, 41%,0.6);
     width: 100%;
     display: flex;
     flex-direction: column;
