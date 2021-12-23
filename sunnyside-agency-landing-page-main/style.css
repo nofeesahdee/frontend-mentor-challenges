@@ -267,10 +267,6 @@ footer ul li a{
         right: 0;
         top: 0;
     }
-    nav .mobile-nav .open{
-        transform: rotate();
-        transform-origin:right;
-    }
     nav .mobile-nav .close{
         right:-60px;
         transform: rotate(90deg);
@@ -306,7 +302,6 @@ footer ul li a{
     }
     header nav ul.active li a{
         color:   hsl(213, 9%, 39%);
-        
         font-size: 20px;
     }
     header nav ul.active li a:hover{
@@ -362,7 +357,7 @@ footer ul li a{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    /* .showcase .part1{
+    .showcase .part1{
         background: url(./images/mobile/image-gallery-milkbottles.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -380,12 +375,12 @@ footer ul li a{
         background-size: 100% 100%;
         width: 100%;
     }
-    .showcase .part1{
+    .showcase .part4{
         background: url(./images/mobile/image-gallery-sugar-cubes.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
         width: 100%;
-    } */
+    }
     footer{
         padding: 50px 20px;
     }
