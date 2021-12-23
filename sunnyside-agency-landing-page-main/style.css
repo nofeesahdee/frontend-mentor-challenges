@@ -250,7 +250,7 @@ footer ul li a{
 @media (max-width:850px){
     header{
         padding: 50px 20px;
-        background-image: url(/images/mobile/image-header.jpg);
+        background-image: url(./images/mobile/image-header.jpg);
         position: relative;
         height: 70vh;
     }
