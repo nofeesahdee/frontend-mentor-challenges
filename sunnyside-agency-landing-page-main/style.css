@@ -28,13 +28,13 @@ p{
 }
 /* header styles */
 header{
-    background-image: url(/images/desktop/image-header.jpg);
+    background-image: url(./images/desktop/image-header.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
     top: 0;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     padding: 50px;
     color:  hsl(0, 0%, 100%);
     text-align: center;
@@ -47,13 +47,15 @@ nav{
 nav img{
     height: 1.5em;
 }
+nav .mobile-nav{
+    display: none;
+}
 nav ul{
     display: flex;
 }
 nav ul li{
     padding:0 20px;
     list-style: none;
-    
 }
 nav ul li a{
     color: hsl(0, 0%, 100%);
@@ -113,18 +115,20 @@ section img{
     margin-bottom: 50px;
 }
 .section-left{
-    background-image: url(/images/desktop/image-graphic-design.jpg);
+    background-image: url(./images/desktop/image-graphic-design.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     height: 80vh;
     color:hsl(167, 40%, 24%);
+    padding: 150px 50px 0 50px;
 }
 .section-right{
-    background-image: url(/images/desktop/image-photography.jpg);
+    background-image: url(./images/desktop/image-photography.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     color:hsl(198, 62%, 26%);
     height: 80vh;
+    padding: 150px 50px 0 50px;
 }
 .text{
     width: 50vw;
@@ -137,7 +141,6 @@ section img{
 .text p{
     line-height: 20px;
     font-size: 15px;
-    padding:0 20px;
 }
 .section-left p{
     color:hsl(167, 40%, 24%);
@@ -182,7 +185,7 @@ article h3{
 }
 .details-body h4{
     margin-bottom: 5px;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 .details-body small{
     color: hsl(210, 4%, 67%);
@@ -190,8 +193,30 @@ article h3{
 .showcase{
     width: 100%;
     display: flex;
+    height: 60vh;
 }
-.showcase img{
+.showcase .part1{
+    background: url(./images/desktop/image-gallery-milkbottles.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 25%;
+}
+.showcase .part2{
+    background: url(./images/desktop/image-gallery-orange.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 25%;
+}
+.showcase .part3{
+    background: url(./images/desktop/image-gallery-cone.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 25%;
+}
+.showcase .part4{
+    background: url(./images/desktop/image-gallery-sugarcubes.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     width: 25%;
 }
 footer{
@@ -201,28 +226,71 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 80px;
+    padding: 50px;
+    overflow: hidden;
 }
 footer img{
     color: hsl(167, 40%, 24%);
 }
 footer ul{
     display: flex;
-    margin-top: 50px;
+    justify-content: space-between;
+    margin-top: 30px;
 }
 footer ul li{
     list-style: none;
-    padding:0 20px ;
+    font-size: 18px;
 }
 footer ul li a{
     text-decoration: none;
     color: hsl(167, 40%, 24%);
     font-weight: 900;
-    
+    padding: 0 20px;
 }
 @media (max-width:850px){
     header{
+        padding: 50px 20px;
         background-image: url(/images/mobile/image-header.jpg);
+        position: relative;
+        height: 70vh;
+    }
+    nav .mobile-nav{
+        display:block;
+        position: relative;
+    }
+    nav .mobile-nav ion-icon{
+        font-size: 30px;
+        font-weight: 700;
+        color: #fff;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    header nav ul{
+        display:none;
+    }
+    header nav ul.active{
+        position: absolute;
+        top: 100px;
+        right: 20px;
+        margin-left: 20px;
+        display: block;
+        width:90%;
+        height: 250px;
+        background-color: #fff;
+        padding: 30px;
+    }
+    header nav ul.active li a{
+        color:  hsl(212, 27%, 19%);
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    header nav ul.active li a:hover{
+        background-color:  hsl(51, 100%, 49%);
+    }
+    header h1{
+        font-size:3em;
     }
     section{
         display: flex;
@@ -231,7 +299,7 @@ footer ul li a{
     section .section-text{
         width: 100vw;
         text-align: center;
-        padding: 50px 100px;
+        padding: 50px 20px;
     }
     section img{
         width: 100vw;
@@ -245,12 +313,60 @@ footer ul li a{
         flex-direction: column;
     }
     .section-left{
-        background-image: url(/images/mobile/image-graphic-design.jpg);
+        background-image: url(./images/mobile/image-graphic-design.jpg);
         background-size: 100% 100%;
         width:100%;
+        padding: 150px 20px 0 20px;
     }
-    article{
+    .section-right{
+        background-image: url(./images/mobile/image-photography.jpg);
+        background-size: 100% 100%;
+        width:100%;
+        padding: 150px 20px 0 20px;
+    }
+    article .details{
         display: flex;
         flex-direction: column;
+    }
+    article .details .details-body{
+        margin-bottom: 50px;
+    } 
+    article .details .details-body h4{
+        margin-top: 0px;
+    }
+    .showcase{
+        width:;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    /* .showcase .part1{
+        background: url(./images/mobile/image-gallery-milkbottles.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+    }
+    .showcase .part2{
+        background: url(./images/mobile/image-gallery-orange.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+    }
+    .showcase .part3{
+        background: url(./images/mobile/image-gallery-cone.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+    }
+    .showcase .part1{
+        background: url(./images/mobile/image-gallery-sugar-cubes.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+    } */
+    footer{
+        padding: 50px 20px;
+    }
+    footer ul li:nth-child(4){
+        display: none;
     }
 }
