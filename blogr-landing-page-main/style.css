@@ -13,7 +13,7 @@ body{
     align-items: center;
     min-height: 100vh;
     font-family:'Ubuntu', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* This is the header styles */
@@ -49,7 +49,7 @@ header nav .logo{
     font-family: inherit;
 }
 .dropbtn img{
-    margin-left:10px;
+    margin-left:5px;
     transition: transform 0.4s ease;
 }
 .dropbtn:hover{
@@ -100,7 +100,7 @@ header .header-body{
     color: hsl(0, 0%, 100%);
 } 
 .header-body h1{
-    font-size: 2.5em;
+    font-size: 4em;
     font-weight: 600;
     margin-bottom: 15px;
 }
@@ -123,11 +123,11 @@ main{
 }
 .section-1 h2{
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3em;
     color:  hsl(207, 13%, 34%);
 }
 .section-1 h3{
-    font-size: 1.5em;
+    font-size: 2em;
     color:  hsl(207, 13%, 34%);
     margin-bottom: 10px;
 }
@@ -267,6 +267,13 @@ h1, h2, h3, h4, h5, h6{
 p{
     font-family: 'Overpass', sans-serif;
 }
-@media (max-width:850px){
-
+.mobile-nav{
+    display: none;
+}
+@media (max-width:500px){
+    header .dropdown,
+    header .login
+    {
+        display: none;
+    }
 }
