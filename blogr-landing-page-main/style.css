@@ -271,9 +271,6 @@ h1, h2, h3, h4, h5, h6{
 p{
     font-family: 'Overpass', sans-serif;
 }
-.mobile-nav{
-    display: none;
-}
 @media (max-width:500px){
     header{
         padding: 20px;
@@ -284,9 +281,11 @@ p{
         display: none;
     }
     .mobile-nav{
-        display:inline-block;
-        font-size: 24px;
-        color: #fff;
+        position: absolute;
+        top: 0;
+        right: 20px;
+    }
+    .mobile-nav .menu-btn{
     }
     /* .dropdown.active{
 
