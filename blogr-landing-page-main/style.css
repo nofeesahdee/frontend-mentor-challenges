@@ -180,7 +180,7 @@ main{
 .text-side h3{
     font-size: 2em;
     color: hsl(0, 0%, 100%);
-    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 .text-side p{
     line-height: 30px;
@@ -283,12 +283,8 @@ p{
     {
         display: none;
     }
-    nav .logo{
-        display: flex;
-        justify-content: space-between;
-    }
     .mobile-nav{
-        display: block;
+        display:inline-block;
         font-size: 24px;
         color: #fff;
     }
@@ -313,12 +309,9 @@ p{
     .left-side{
         padding:0 20px;
     }
-    .section-2{
-        display: flex;
-        flex-direction: column;
-    }
     .image-section-1{
         margin-bottom: 20px;
+        margin-right: 0;
     }
     .section-1 .image-section-1 img:nth-child(1)
     {
@@ -328,6 +321,8 @@ p{
         display:block;
     }
     .section-2{
+        display: flex;
+        flex-direction: column;
         min-height: 70vh;
         text-align: center;
         padding: 20px;
@@ -346,7 +341,7 @@ p{
         padding: 20px;
     }
     .image-section-3{
-        margin: 0;
+        margin-left:0;
     }
     .section-3 .image-section-3 img:nth-child(1)
     {
