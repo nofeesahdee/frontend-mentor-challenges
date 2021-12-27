@@ -15,7 +15,6 @@ body{
     font-family:'Ubuntu', sans-serif;
     font-size: 18px;
 }
-
 /* This is the header styles */
 header{
     position: relative;
@@ -68,8 +67,8 @@ header nav .logo{
 }
 .dropdown.active .dropdown-content{
     min-height: 250px;  
-    position: fixed;
-
+    position:fixed;
+    transition: 0.4s ease;
 }
 .dropdown.active .dropbtn img{
     transform: rotate(180deg);
@@ -150,6 +149,9 @@ main{
     width: 80%;
     margin-right: -250px;
 }
+.image-section-1 img:nth-child(2){
+    display: none;
+}
 /* section-2 */
 .section-2{
     background-image: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
@@ -157,7 +159,7 @@ main{
     justify-content: space-between;
     border-bottom-left-radius: 100px;
     border-top-right-radius: 100px;
-    max-height: 70vh;
+    min-height: 70vh;
 }
 .phone-side{
     background-image: url(/images/bg-pattern-circles.svg);
@@ -189,9 +191,12 @@ main{
     display: flex;
     padding-top: 100px;
 }
-.section-3 img{
+.image-section-3{
     width: 80%;
-    margin-left: -300px;
+    margin-left: -250px;
+}
+.image-section-3 img:nth-child(2){
+    display: none;
 }
 .free-side{
     align-self: center;
@@ -287,9 +292,9 @@ p{
         font-size: 24px;
         color: #fff;
     }
-    .dropdown.active{
+    /* .dropdown.active{
 
-    }
+    } */
     .header-body h1{
         font-size: 3em;
     }
@@ -304,17 +309,47 @@ p{
         flex-direction: column-reverse;
         text-align: center;
     }
-    .section-1 .section-body-1 img{
-        margin: 0;
-        display: flex;
-        justify-self: center;
-        width: 100%;
-    }
     .left-side{
         padding:0 20px;
     }
     .section-2{
         display: flex;
         flex-direction: column;
+    }
+    .image-section-1{
+        margin-bottom: 20px;
+    }
+    .section-1 .image-section-1 img:nth-child(1)
+    {
+        display: none;
+    }
+    .section-1 .image-section-1 img{
+        display:block;
+    }
+    .section-2{
+        min-height: 70vh;
+        text-align: center;
+        padding: 20px;
+    }
+    .phone-side img{
+        margin-top:-70px;
+    }
+    .text-side{
+        margin-top: 20px;
+        padding:0;
+    }
+    .section-3{
+        display: flex;
+        flex-direction: column;
+    }
+    .image-section-3{
+        margin: 0;
+    }
+    .section-3 .image-section-3 img:nth-child(1)
+    {
+        display: none;
+    }
+    .section-3 .image-section-3 img{
+        display:block;
     }
 }
