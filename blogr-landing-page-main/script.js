@@ -1,6 +1,6 @@
 const accordion =  document.getElementsByClassName("dropdown");
 const mobileNav = document.querySelector('.mobile-nav');
-const dropdown = document.querySelector('.dropdown')
+const dropdown = document.querySelector('.mobile-dropdown')
 let menuOpen = false;
 
   for (i = 0; i < accordion.length; i++){

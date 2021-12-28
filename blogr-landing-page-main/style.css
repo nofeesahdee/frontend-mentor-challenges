@@ -38,6 +38,10 @@ header nav{
 header nav .logo{
     display: flex;
 }
+.dropdown{
+    position: relative;
+    margin: 0;
+}
 .dropbtn{
     position: relative;
     color: hsl(0, 0%, 100%);
@@ -275,7 +279,7 @@ p{
     header{
         padding: 20px;
     }
-    header .dropdown,
+    header .mobile-dropdown,
     header .login
     {
         display: none;
@@ -323,15 +327,28 @@ p{
      .mobile-nav.open .menu-btn::after{
         transform: rotate(-45deg) translate(35px, 35px);
      }
-     .dropdown.open{
+    .mobile-dropdown.open{
         display:flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: #fff;
         position: absolute;
         top: 80px;
         width: 90%;
         min-height: 300px;
-        color:black;
+     }
+     .mobile-dropdown.open .dropbtn{
+        color: #000;
+     }
+     .mobile-dropdown.open .dropdown .dropdown-content{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+        background-color:hsl(240, 2%, 79%);
      }
     .header-body h1{
         font-size: 3em;
