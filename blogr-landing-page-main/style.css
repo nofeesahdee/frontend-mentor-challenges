@@ -162,7 +162,7 @@ main{
     min-height: 70vh;
 }
 .phone-side{
-    background-image: url(/images/bg-pattern-circles.svg);
+    background-image: url(./images/bg-pattern-circles.svg);
     background-repeat: no-repeat;
     background-size:100%;
     background-position:center;
@@ -282,14 +282,47 @@ p{
     }
     .mobile-nav{
         position: absolute;
-        top: 0;
+        top: 40px;
         right: 20px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        transition: all 0.5s ease-in-out;
     }
     .mobile-nav .menu-btn{
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 5px;
+        transform: all 0.5s ease-in-out;
     }
-    /* .dropdown.active{
-
-    } */
+    .mobile-nav .menu-btn::before,
+    .mobile-nav .menu-btn::after
+    {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 5px;
+        transform: all 0.5s ease-in-out;
+    }
+    .mobile-nav .menu-btn::before{
+       transform: translateY(-10px);
+    }
+    .mobile-nav .menu-btn::after{
+        transform: translateY(10px);
+    }
+    .mobile-nav.open .menu-btn{
+        transform:translateX(-50px);
+        background: transparent;
+    }
+    .mobile-nav.open .menu-btn::before{
+        transform: rotate(45deg) translate(35px, -35px);
+     }
+     .mobile-nav.open .menu-btn::after{
+        transform: rotate(-45deg) translate(35px, 35px);
+     }
     .header-body h1{
         font-size: 3em;
     }
