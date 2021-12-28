@@ -323,6 +323,16 @@ p{
      .mobile-nav.open .menu-btn::after{
         transform: rotate(-45deg) translate(35px, 35px);
      }
+     .dropdown.open{
+        display:flex;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 80px;
+        width: 90%;
+        min-height: 300px;
+        color:black;
+     }
     .header-body h1{
         font-size: 3em;
     }

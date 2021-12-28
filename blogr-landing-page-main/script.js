@@ -1,5 +1,6 @@
 const accordion =  document.getElementsByClassName("dropdown");
 const mobileNav = document.querySelector('.mobile-nav');
+const dropdown = document.querySelector('.dropdown')
 let menuOpen = false;
 
   for (i = 0; i < accordion.length; i++){
@@ -11,9 +12,11 @@ let menuOpen = false;
   mobileNav.addEventListener('click', () =>{
     if(!menuOpen){
       mobileNav.classList.add('open')
+      dropdown.classList.add('open')
       menuOpen = true
     }else{
       mobileNav.classList.remove('open')
+      dropdown.classList.remove('open')
       menuOpen = false
     }
   })
