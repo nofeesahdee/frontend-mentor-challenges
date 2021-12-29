@@ -38,6 +38,9 @@ header nav{
 header nav .logo{
     display: flex;
 }
+.mobile-dropdown{
+    display: flex;
+}
 .dropdown{
     position: relative;
     margin: 0;
@@ -399,15 +402,16 @@ p{
         text-align: center;
         padding: 20px;
     }
-    .image-section-3{
-        margin-left:0;
+    .section-3 .image-section-3{
+        margin:0;
     }
     .section-3 .image-section-3 img:nth-child(1)
     {
         display: none;
+        margin-right: 50px;
     }
     .section-3 .image-section-3 img{
-        display:block;
+        display:flex;
     }
     .free-side{
         padding:0;
