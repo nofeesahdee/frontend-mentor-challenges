@@ -199,7 +199,7 @@ main{
     padding-top: 100px;
 }
 .image-section-3{
-    width: 80%;
+    /* width: 80%; */
     margin-left: -250px;
 }
 .image-section-3 img:nth-child(2){
@@ -408,7 +408,6 @@ p{
     .section-3 .image-section-3 img:nth-child(1)
     {
         display: none;
-        margin-right: 50px;
     }
     .section-3 .image-section-3 img{
         display:flex;
