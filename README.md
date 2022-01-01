@@ -68,5 +68,5 @@
 
 ##### 6. Easybank Landing Page
 
-* [Live Site]()
+* [Live Site](https://nofeesahdee.github.io/Frontend-mentor-challenges/easybank-landing-page-master/)
 * [Solution]()
