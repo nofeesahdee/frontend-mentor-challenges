@@ -162,13 +162,14 @@ article .feature small{
     padding: 0 15px;
     font-size: 0.6em;
 }
-article .feature h4{
+article .feature h3{
     color:hsl(233, 26%, 24%);
     font-weight: 400;
     margin-bottom: 20px;
     padding: 0 15px;
+    font-size: 1em;
 }
-article .feature h4:hover{
+article .feature h3:hover{
     color:hsl(136, 65%, 51%);
     cursor: pointer;
 }
