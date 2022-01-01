@@ -65,3 +65,8 @@
 
 * [Live Site]()
 * [Solution]()
+
+##### 6. Easybank Landing Page
+
+* [Live Site]()
+* [Solution]()
