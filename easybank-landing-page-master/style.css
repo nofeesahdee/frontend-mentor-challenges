@@ -24,7 +24,7 @@ header{
     background-color: hsl(0, 0%, 100%);
     display: flex;
     justify-content: space-between;
-    padding: 30px 100px;
+    padding: 30px 150px;
     width: 100%;
 }
 header nav{
@@ -39,7 +39,9 @@ header nav a{
 header nav a:hover{
     color: hsl(233, 26%, 24%);
 }
-
+.mobile-nav{
+    display: none;
+}
 /* BUTTONS */
 .btn{
     padding: 10px 30px;
@@ -52,7 +54,7 @@ header nav a:hover{
     font-size: 15px;
 }
 .btn:hover{
-    transform: scale(0.98);
+    transform: scale(0.96);
 }
 
 /* MAIN */
@@ -65,19 +67,19 @@ main{
 main section{
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 .left-side{
     align-self: center;
-    padding-left: 100px;
-    padding-right: 70px;
+    padding: 0 150px;
 }
 .right-side{
     background-image: url(./images/bg-intro-desktop.svg);
-    /* z-index: 1; */
+    background-repeat: no-repeat;
 }
 .right-side img{
-    margin-right: -100px;
-    margin-bottom: -150px;
+    /* margin-right:; */
+    /* margin-bottom: -150px; */
 }
 .left-side h1{
     font-size: 2em;
@@ -96,7 +98,7 @@ aside{
     display: flex;
     flex-direction: column;
     background-color:hsl(220, 16%, 96%);
-    padding: 100px;
+    padding:100px 150px;
 }
 aside h2{
     font-size: 1.5em;
@@ -127,7 +129,7 @@ aside p{
     margin-bottom: 20px;
 }
  .feature p{
-    width:260px;
+    width:240px;
 }
 
 /* ARTICLE */
@@ -135,7 +137,7 @@ article{
     display: flex;
     flex-direction: column;
     background-color:hsl(0, 0%, 98%);
-    padding: 100px;
+    padding:100px 150px;
 }
 article h2{
     font-size: 1.5em;
@@ -143,11 +145,11 @@ article h2{
     color: hsl(233, 26%, 24%);
 }
 article .feature{
-    width: 260px;
+    width: 240px;
     background-color: #fff;
 }
 article .feature img{
-    width:260px;
+    width:240px;
     height: 170px;
     border-radius: 5px;
 }
@@ -179,11 +181,20 @@ article .feature p{
 /* FOOTER */
 footer{
     background-color:hsl(233, 26%, 24%);
-    padding: 50px 100px;
+    padding:70px 150px;
     display: flex;
     justify-content: space-between;
     width: 100%;
     color: hsl(233, 8%, 62%);
+}
+.logo2{
+    margin-bottom:45px;
+}
+.icons a{
+    margin-right:10px;
+}
+.icons a:hover{
+    fill:hsl(136, 65%, 51%);
 }
 .contact{
     display: flex;
@@ -209,9 +220,109 @@ footer{
 }
 /* MOBILE DEVICE */
 @media (max-width:500px){
-    /* *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    } */
+   header{
+       padding:30px;
+       position: fixed;
+   }
+   .mobile-nav{
+       display: block;
+   }
+   header nav,
+   header .btn{
+       display: none;
+   }
+   nav.active{
+       display:flex;
+       flex-direction: column;
+       align-items: center;
+       padding: 30px;
+       background-color: hsl(0, 0%, 100%);
+       width: 90%;
+       height: 300px;
+       position: absolute;
+       top: 100px;
+       right: 20px;
+       border-radius:5px;
+   }
+   .close{
+       display: none;
+   }
+   section{
+       display: flex;
+       flex-direction: column-reverse;
+       text-align: center;
+   }
+   .left-side{
+    align-self: center;
+    padding:40px 30px;
+    }
+    .right-side{
+        padding-top: 50px;
+        background-image: url(./images/bg-intro-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: cover;
+    }
+    .right-side img{
+        width: 100%;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 30px;
+    }
+    aside p{
+        width: 100%;
+    }
+    .aside-section{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .aside-section p{
+        width: 100%;
+    }
+    .feature{
+        width:100%;
+        margin-bottom: 20px;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 50px 30px;
+    }
+    article h2{
+        text-align: center;
+    }
+    article .feature{
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    article .feature img{
+        width: 100%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 30px;
+    }
+    footer .contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        margin-bottom: 30px;
+    }
+    .logo2{
+        margin-bottom: 20px;
+    }
+    .contact{
+        margin-bottom: 30px;
+    }
+    .copyright .btn{
+        margin-bottom: 20px;
+    }
 }
