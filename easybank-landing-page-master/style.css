@@ -181,4 +181,26 @@ footer{
     background-color:hsl(233, 26%, 24%);
     padding: 50px 100px;
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: hsl(233, 8%, 62%);
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+.contact ul{
+    list-style: none;
+}
+.contact ul li{
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.contact ul li:hover{
+   color:hsl(136, 65%, 51%);
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
 }
