@@ -161,7 +161,8 @@ article .feature:hover{
 article .feature img{
     width:250px;
     height: 170px;
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 article .feature small{
     display: block;
@@ -185,8 +186,8 @@ article .feature p{
     padding: 0 15px;
     width:250px;
     color: hsl(233, 8%, 62%);
-    font-size: 0.9em;
-    line-height: 25px;
+    font-size: 0.7em;
+    line-height: 20px;
     padding-bottom: 20px;
 }
 /* FOOTER */
