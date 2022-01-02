@@ -1,0 +1,50 @@
+const thumbnail_1 = document.querySelector('.thumbnail-1')
+const thumbnail_2 = document.querySelector('.thumbnail-2')
+const thumbnail_3 = document.querySelector('.thumbnail-3')
+const thumbnail_4 = document.querySelector('.thumbnail-4')
+
+const product_1 = document.querySelector('.product-1')
+const product_2 = document.querySelector('.product-2')
+const product_3 = document.querySelector('.product-3')
+const product_4 = document.querySelector('.product-4')
+
+const plus = document.querySelector('.plus')
+const minus = document.querySelector('.minus')
+const numberCounter = document.querySelector('.number-counter')
+let count = 0
+
+thumbnail_1.addEventListener('click', () => {
+    product_1.style.display = "block";
+    product_2.style.display = "none";
+    product_3.style.display = "none";
+    product_4.style.display = "none";
+})
+thumbnail_2.addEventListener('click', () => {
+    product_2.style.display = "block";
+    product_1.style.display = "none";
+    product_3.style.display = "none";
+    product_4.style.display = "none";
+})
+thumbnail_3.addEventListener('click', () => {
+    product_3.style.display = "block";
+    product_1.style.display = "none";
+    product_2.style.display = "none";
+    product_4.style.display = "none";
+})
+
+thumbnail_4.addEventListener('click', () => {
+    product_4.style.display = "block";
+    product_1.style.display = "none";
+    product_2.style.display = "none";
+    product_3.style.display = "none";
+})
+
+plus.addEventListener('click', () => {
+    count++
+    numberCounter.innerHTML = count;
+})
+
+minus.addEventListener('click', () => {
+    count--
+    numberCounter.innerHTML = count;
+})
