@@ -63,8 +63,19 @@ nav a:hover{
     border-radius: 50%;
 }
 .cart{
+    position: relative;
     align-self: center;
     cursor: pointer;
+}
+.cart-output{
+    position: absolute;
+    text-align: center;
+    background-color:hsl(26, 100%, 55%);
+    border-radius: 50%;
+    color: hsl(0, 0%, 100%);
+    display: none;
+    width: 20px;
+    height: 20px;
 }
 
 /* MAIN STYLE */

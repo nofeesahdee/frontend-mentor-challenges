@@ -13,6 +13,11 @@ const minus = document.querySelector('.minus')
 const numberCounter = document.querySelector('.number-counter')
 let count = 0
 
+const button = document.querySelector('button')
+const cartOutput = document.querySelector('.cart-output')
+
+const cart = document.querySelector('cart')
+
 thumbnail_1.addEventListener('click', () => {
     product_1.style.display = "block";
     product_2.style.display = "none";
@@ -47,4 +52,9 @@ plus.addEventListener('click', () => {
 minus.addEventListener('click', () => {
     count--
     numberCounter.innerHTML = count;
+})
+
+button.addEventListener('click', () =>{
+    cartOutput.style.display = "block"
+    cartOutput.innerHTML = count
 })
