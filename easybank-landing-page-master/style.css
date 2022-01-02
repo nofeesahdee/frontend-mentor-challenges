@@ -95,6 +95,7 @@ main section{
     margin-bottom:20px;
     color: hsl(233, 8%, 62%);
     line-height: 25px;
+    font-size: 0.9em;
 }
 /* ASIDE */
 aside{
@@ -114,6 +115,7 @@ aside p{
     color: hsl(233, 8%, 62%);
     line-height: 25px;
     width: 650px;
+    font-size: 0.9em;
 }
 .aside-section{
     display: flex;
@@ -168,22 +170,23 @@ article .feature small{
     display: block;
     color:hsl(233, 8%, 62%);
     margin-bottom: 10px;
-    padding: 0 15px;
+    padding: 0 20px;
     font-size: 0.6em;
 }
 article .feature h3{
     color:hsl(233, 26%, 24%);
     font-weight: 400;
     margin-bottom: 20px;
-    padding: 0 15px;
-    font-size: 1em;
+    padding: 0 20px;
+    font-size: 0.9em;
+    cursor: pointer;
 }
 article .feature h3:hover{
     color:hsl(136, 65%, 51%);
-    cursor: pointer;
+    
 }
 article .feature p{
-    padding: 0 15px;
+    padding: 0 20px;
     width:250px;
     color: hsl(233, 8%, 62%);
     font-size: 0.7em;
