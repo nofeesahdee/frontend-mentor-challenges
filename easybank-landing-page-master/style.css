@@ -75,16 +75,17 @@ main section{
     align-self: center;
     padding: 0 50px 0 150px;
 }
-.right-side{
+.right-side {
     background-image: url(./images/bg-intro-desktop.svg);
     background-repeat: no-repeat;
+    /* background-position: center bottom;
+    background-size: 100% 100%; */
 }
 .right-side img{
     margin-right:-70px;
-    /* margin-bottom: -150px; */
 }
 .left-side h1{
-    font-size: 2em;
+    font-size: 2.5em;
     color: hsl(233, 26%, 24%);
     font-family: inherit;
     margin-bottom:20px;
@@ -103,7 +104,7 @@ aside{
     padding:100px 150px;
 }
 aside h2{
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 400;
     margin-bottom: 20px;
     color: hsl(233, 26%, 24%);
@@ -142,16 +143,23 @@ article{
     padding:100px 150px;
 }
 article h2{
-    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-size: 2em;
     font-weight: 400;
     color: hsl(233, 26%, 24%);
 }
 article .feature{
-    width: 240px;
+    width: 250px;
     background-color: #fff;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+article .feature:hover{
+    transform: scale(1.03);
+    transition: 0.4s ease-in-out;
 }
 article .feature img{
-    width:240px;
+    width:250px;
     height: 170px;
     border-radius: 5px;
 }
