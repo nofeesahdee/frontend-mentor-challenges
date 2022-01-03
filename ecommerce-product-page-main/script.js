@@ -19,6 +19,7 @@ const cartOutput = document.querySelector('.cart-output')
 const cart = document.querySelector('.cart')
 const cartDisplay = document.querySelector('.cart-display')
 const productPrice = document.querySelector('.product-price')
+const checkout = document.querySelector('.checkout')
 
 thumbnail_1.addEventListener('click', () => {
     product_1.style.display = "block";
@@ -65,4 +66,9 @@ button.addEventListener('click', () =>{
 
 cart.addEventListener('click', () =>{
     cartDisplay.style.display = "block"
+})
+
+checkout.addEventListener('click', () => {
+    cartOutput.style.display = "none"
+    cartDisplay.style.display = "none"
 })
