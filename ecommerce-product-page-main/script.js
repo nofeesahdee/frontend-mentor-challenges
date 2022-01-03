@@ -13,10 +13,12 @@ const minus = document.querySelector('.minus')
 const numberCounter = document.querySelector('.number-counter')
 let count = 0
 
-const button = document.querySelector('button')
+const button = document.querySelector('.btn')
 const cartOutput = document.querySelector('.cart-output')
 
-const cart = document.querySelector('cart')
+const cart = document.querySelector('.cart')
+const cartDisplay = document.querySelector('.cart-display')
+const productPrice = document.querySelector('.product-price')
 
 thumbnail_1.addEventListener('click', () => {
     product_1.style.display = "block";
@@ -57,4 +59,10 @@ minus.addEventListener('click', () => {
 button.addEventListener('click', () =>{
     cartOutput.style.display = "block"
     cartOutput.innerHTML = count
+    multiply = 125 * count
+    productPrice.innerHTML = `$125 * ${count} = $${multiply}`
+})
+
+cart.addEventListener('click', () =>{
+    cartDisplay.style.display = "block"
 })
