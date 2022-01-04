@@ -8,6 +8,8 @@
 body{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
     position: relative;
     font-family: 'Open Sans', sans-serif;
@@ -29,7 +31,7 @@ header{
     left: 0;
     width: 100%;
     color:  hsl(0, 0%, 100%);
-    padding:50px 100px 20px 100px;
+    padding:40px 100px;
     background-color: hsl(219, 30%, 18%);
 }
 header ul{
@@ -41,6 +43,9 @@ header ul li{
     font-size: 18px;
     cursor: pointer;
 }
+header ul li:hover{
+    transform: scale(0.98);
+}
 main{
     width: 100%;
     display: flex;
@@ -50,7 +55,7 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding:30px 0;
+    padding:40px 0;
     background-image: url(/images/bg-curvy-desktop.svg);
     background-repeat: no-repeat;
     background-size:contain;
@@ -58,10 +63,10 @@ main{
 }
 main img{
     width: 40%;
-    margin-bottom: 20px;
+    margin-bottom:20px;
 }
 main .text{
-    max-width: 480px;
+    max-width: 500px;
 }
 button{
     background-color:  hsl(198, 60%, 50%);
@@ -87,7 +92,7 @@ main button{
 .section-1{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 30px 100px;
+    padding: 40px 100px;
     text-align: center;
     place-items: center;
     width: 100%;
@@ -104,7 +109,7 @@ section .section-body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 30px 100px;
+    padding: 40px 100px;
     color:hsl(0, 0%, 100%);
     background-color: hsl(218, 28%, 13%);
 }
@@ -130,23 +135,28 @@ section .section-body{
 }
 .testimonials{
     display: flex;
-    margin: 90px 0 250px 0;
-    background-image: url(/images/bg-quotes.png);
+    justify-content: space-between;
+    margin: 50px 0 250px 0;
+    background-image: url(./images/bg-quotes.png);
     background-repeat: no-repeat;
+    background-position: left top;
 }
 .testimonial-body{
     background-color: hsl(217, 28%, 15%);
     padding: 20px;
     border-radius: 10px;
-    margin-left: 40px;
+    margin-right:20px;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
+.testimonial-body p{
+    font-size: 16px;
+}
 .testimonial-body img{
     border-radius: 50%;
-    max-width: 50px;
+    width: 50px;
     height: 50px;
 }
 .avatar{
@@ -162,7 +172,7 @@ section .section-body{
 }
 .avatar-text p{
     margin: 0 0 10px 15px;
-    font-size: 10px;
+    font-size: 12px;
 }
 footer{
     position: relative;
@@ -223,44 +233,64 @@ footer .info{
     padding-top: 100px;
     width: 100%;
 }
+footer .info img{
+    margin-bottom: 10px;
+}
 footer .info .info-body{
     display: flex;
     justify-content: space-between;
 }
-footer .info .info-body p{
-    max-width: 300px;
+.info-body p{
+    max-width: 500px;
+    display: flex;
 }
 .info-body ul li{
+    margin-bottom: 10px;
     list-style: none;
     opacity: 0.7;
     cursor: pointer;
 }
 .info-body p img{
     margin-right: 20px;
+    width: 20px;
+    height: 20px;
 }
 .info-body ul li:hover{
     opacity: 1;
 }
 @media(max-width:700px){
     header {
-        padding:40px;
+        padding:40px 20px;
+        width: 100%;
+        align-items: center;
+    }
+    header img{
+        width:25%;
     }
     header ul{
-        display: none;
+        align-self: center;
+    }
+    header ul li{
+        font-size: 15px;
+        margin: 0;
+        margin-left: 15px;
+    }
+    main{
+        padding:40px 20px;
     }
     main img{
-        width: 80%;
+        width: 100%;
     }
     .section-1{
         display: flex;
         flex-direction: column;
-        padding: 20px;
-        text-align: center;
         justify-content: center;
         align-items: center;
+        padding:40px 20px;
+        text-align: center;
     }
     .section-2{
-        padding: 15px;
+        padding:40px 20px;
     }
     .section-2 .productive{
         display: flex;
@@ -268,26 +298,49 @@ footer .info .info-body p{
         align-items: center;
         justify-content: center;    
     }
-    .productive img{
-        margin-bottom: 15px;
-        width: 80%;
+    .section-2 .productive .illustration{
+        width:100%;
+        margin-bottom: 20px;
+    }
+    .text3{
+        align-self: center;
+        margin:0;
     }
     .testimonials{
         display: flex;
         flex-direction: column;
         max-width: 350px;
-        margin-bottom: 150px;
+        margin: 50px 0 100px 0;
+    }
+    .testimonial-body{
+        margin-right:0;
+    }
+    footer{
+        padding: 40px 20px;
+        font-size:15px ;
     }
     footer .early-access{
         max-width: 350px;
+        margin-top: 300px;
         padding: 15px;
     }
+    footer .early-access p{
+        font-size: 15px;
+    }
     footer .info{
-        padding:;  
+        margin:10px;
+        text-align: left;
+        width: 100%;
+        padding-top:250px;  
     }
     .info-body{
         display: flex;
         flex-direction: column;
+    }
+    .info-body p{
+        font-size: 15px;
+        color: #fff;
+        margin-bottom:10px;
     }
     .form-control{
         display: flex;
@@ -303,15 +356,5 @@ footer .info .info-body p{
         width: 300px;
         display: block;
         margin-bottom: 0;
-    }
-    footer .early-access{
-        margin-top: 300px;
-    }
-   .info{
-       margin:10px;
-       text-align: left;
-   }
-   .info-body p{
-        margin-bottom:20px;
     }
 }
