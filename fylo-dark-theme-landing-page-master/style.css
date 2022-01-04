@@ -20,7 +20,6 @@ h1,h2,h3 {
 }
 p{
     font-size: 18px;
-    opacity: 0.7;
     margin-bottom: 20px ;
 }
 header{
@@ -243,6 +242,7 @@ footer .info .info-body{
 .info-body p{
     max-width: 500px;
     display: flex;
+    color: #fff;
 }
 .info-body ul li{
     margin-bottom: 10px;
