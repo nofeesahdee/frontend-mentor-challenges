@@ -17,16 +17,16 @@ body{
     position: relative;
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
-    margin: 40px;
+    margin: 50px;
     max-width: 90%;
-    min-height: 500px;
+    min-height: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .left-side{
     position: relative;
-    background-image: url(/images/bg-pattern-desktop.svg);
+    background-image: url(./images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
     background-position:top;
     background-size: cover;
@@ -38,9 +38,6 @@ body{
     left: -25%;
     overflow: visible;
 }
-/* .left-side .woman-box{
-    overflow: hidden;
-} */
 .woman-box .woman{
     margin-left:-80px;
 }
@@ -109,37 +106,31 @@ img{
     .container{
         display: flex;
         flex-direction: column;
-        margin: 10px;
+        margin:10px;
     }
     h1{
         text-align: center;
     }
     .left-side{
-        /* background-image: url(/images/bg-pattern-mobile.svg);
+        background-image: url(./images/bg-pattern-mobile.svg);
         background-repeat: no-repeat;
         background-position: top;
         background-size: contain;
         position: relative;
-        display: flex;
-        margin-top: 50%; */
     }
     .left-side .box{
        display:none;
     }
-    .left-side .woman-box{
-        /* overflow: visible; */
-        margin-top: -50%;
-    }
     .woman-box .woman{
-        display:;
-        width: 50%;
-        margin:-50px 0 0 0;
+        display:none;
     }
     .woman-box .woman-mobile{
-        display:;
+        display:block;
+        width: 100%;
+        margin-top: -100px;
     }
     .right-side{
-        padding:15px;
+        padding:10px;
     }
     .questions p{
         font-size: 15px;
