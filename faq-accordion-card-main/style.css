@@ -19,7 +19,7 @@ body{
     border-radius: 10px;
     margin: 40px;
     max-width: 90%;
-    min-height: 400px;
+    min-height: 500px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,15 +38,18 @@ body{
     left: -25%;
     overflow: visible;
 }
-.left-side .woman-box{
+/* .left-side .woman-box{
     overflow: hidden;
-}
-.left-side .woman{
+} */
+.woman-box .woman{
     margin-left:-80px;
+}
+.woman-box .woman-mobile{
+    display:none;
 }
 .right-side{
     padding: 30px;
-    width: 500px;
+    max-width: 500px;
 }
 h1{
     text-transform: uppercase;
@@ -102,35 +105,43 @@ img{
         transform: translateY(0px);
     }
 }
-@media (max-width:900px){
+@media (max-width:700px){
     .container{
         display: flex;
         flex-direction: column;
-        max-width: 800px;
+        margin: 10px;
     }
     h1{
         text-align: center;
     }
     .left-side{
-        background-image: url(/images/bg-pattern-mobile.svg);
+        /* background-image: url(/images/bg-pattern-mobile.svg);
         background-repeat: no-repeat;
         background-position: top;
         background-size: contain;
         position: relative;
         display: flex;
-        margin-top: 50%;
+        margin-top: 50%; */
     }
     .left-side .box{
-        /* position: absolute;
-        margin: 0%; */
-        /* top: 40%;
-        left: -25%; */
+       display:none;
     }
     .left-side .woman-box{
-        overflow: visible;
+        /* overflow: visible; */
         margin-top: -50%;
     }
-    .left-side .woman-box .woman{
-        margin-left: 0;
+    .woman-box .woman{
+        display:;
+        width: 50%;
+        margin:-50px 0 0 0;
+    }
+    .woman-box .woman-mobile{
+        display:;
+    }
+    .right-side{
+        padding:15px;
+    }
+    .questions p{
+        font-size: 15px;
     }
 }
