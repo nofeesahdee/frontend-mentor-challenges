@@ -17,15 +17,16 @@ body{
     position: relative;
 }
 header{
-    background-image: url(/images/bg-hero-desktop.svg);
+    background-image: url(./images/bg-hero-desktop.svg);
     background-repeat: no-repeat cover;
     background-color: hsl(193, 100%, 96%);
     display: flex;
     flex-direction: column;
     position: absolute;
     width: 100%;
+    min-height: 100vh;
     top: 0;
-    padding: 40px 100px;
+    padding: 50px 100px;
 }
 header nav{
     display:flex;
@@ -49,9 +50,8 @@ button{
     color: white;
     border-radius:20px;
     border: 1px solid hsl(322, 100%, 66%);
-    padding: 10px 40px;
+    padding: 10px 30px;
     font-weight:700;
-    width: 250px;
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
     box-shadow: 0 2px 55px rgba(128, 141, 153, 0.2);
@@ -82,7 +82,7 @@ main{
     flex-direction: column;
     justify-content: center;
     top: 700px;
-    padding: 10px 100px;
+    padding: 30px 100px;
     width: 100%;
  }
  .main1{
@@ -107,8 +107,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    padding: 40px 100px;
+    padding: 50px 100px;
     width: 100%;
     top: 900px;
 }
@@ -181,12 +180,16 @@ span{
     padding-top: 20px;
     color: rgba(255, 255, 255, 0.8);
 }
-@media(max-width:900px) {
-    .container{
-        margin:20px auto;
+@media(max-width:700px) {
+      header{
+        padding: 10px;
     }
-      header, main, footer{
-        padding: 40px;
+    .btn{
+        padding: 10px 20px;
+    }
+    header nav img{
+        width: 70%;
+        margin-top: 10px;
     }
     .illustration{
         width: 50%;
@@ -227,7 +230,6 @@ span{
         display: flex;
         flex-direction: column;
         top: 1000px;
-        margin: 20px 0;
     }
     .logo2{
         margin-top:50px;
@@ -252,7 +254,7 @@ span{
 }
 @media(max-width:650px){
       header, main, footer{
-        padding: 40px;
+        padding: 20px;
     }
     nav img{
        width:150px;
