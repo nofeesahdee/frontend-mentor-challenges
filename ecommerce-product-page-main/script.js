@@ -71,4 +71,5 @@ cart.addEventListener('click', () =>{
 checkout.addEventListener('click', () => {
     cartOutput.style.display = "none"
     cartDisplay.style.display = "none"
+    // numberCounter.innerHTML = count - count
 })
