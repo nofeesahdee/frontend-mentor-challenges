@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    padding: 20px 100px;
+}
+.logo{
+    width:200px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.illustration{
+    width: 60%;
+}
+.textbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
+}
+.textbox h1{
+    line-height: 1.2em;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.textbox p{
+    line-height: 1.5em;
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+.textbox input{
+    background-color: white;
+    padding: 12px 0;
+    width: 200px;
+    border: 1px solid white;
+    border-radius:30px;
+    font-size: 16px;
+    font-weight:bold;
+    cursor: pointer;
+    box-shadow: 0px 20px 55px rgba(0,0,0,0.2);
+}
+.textbox input:hover{
+    transform: scale(0.96);
+}
+.socials ul{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+.socials ul li{
+    list-style: none;
+    width: 35px;
+    border: 2px solid white;
+    border-radius:50%;
+    margin-left: 20px;
+    padding: 5px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.socials ul li a{
+    color: hsl(0, 0%, 100%);
+    
+}
+.socials ul li:hover{
+    transform: scale(0.96);
+}
+@media (max-width:700px){
+    main{
+        align-items: center;
+        padding: 20px;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .illustration{
+        width: 90%;
+    }
+    .textbox{
+        margin-left: 0;
+    }
+    .textbox input{
+        align-self: center;
+        margin-bottom: 20px;
+    }
+    .socials ul{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+@media (max-width:380px){
+    body{
+        background-image: url(./images/bg-mobile.svg);
+    }
+}
