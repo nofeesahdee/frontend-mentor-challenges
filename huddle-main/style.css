@@ -237,19 +237,15 @@ span{
     .info{
         display: flex;
         flex-direction: column;
-    }
-    .info .contact-info{
-        margin-top: 0;
+        
     }
     .socials li{
         margin: 30px 15px 0 0;
     }
     footer .community{
-       
         position:absolute;
         padding: 40px 50px;
-        margin-top: 160px;
-
+        margin-top: 150px;
       } 
 }
 @media(max-width:650px){
@@ -280,8 +276,8 @@ span{
         top: 1000px;
     }
     footer .community{
-        width:300px;
-        padding: 10px 30px;
+        width:350px;
+        padding: 30px;
     }
     footer .community h3{
         font-size: 15px;
