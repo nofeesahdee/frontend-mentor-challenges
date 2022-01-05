@@ -154,7 +154,7 @@ main{
 }
 .image-section-1{
     width: 80%;
-    margin-right: -250px;
+    margin-right:-250px;
 }
 .image-section-1 img:nth-child(2){
     display: none;
@@ -196,11 +196,11 @@ main{
 /* section-3 */
 .section-3{
     display: flex;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .image-section-3{
     width: 100%;
-    margin-left: -250px;
+    margin-left:-250px;
 }
 .image-section-3 img:nth-child(2){
     display: none;
@@ -401,10 +401,9 @@ p{
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 20px;
     }
     .image-section-3{
-        width: 100%;
+       
         margin: 0;
         margin-bottom: 20px;
     }
@@ -414,10 +413,10 @@ p{
     }
     .image-section-3 img:nth-child(2){
         display:block;
-        padding: 0;
+        width: 100%;
     }
     .free-side{
-        padding:0;
+        padding:0 20px;
     }
     .free-side-body{
         margin-bottom: 50px;
