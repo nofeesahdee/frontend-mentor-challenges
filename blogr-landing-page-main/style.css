@@ -394,7 +394,7 @@ p{
         margin-top:-70px;
     }
     .text-side{
-        margin-top: 20px;
+        margin-top:20px;
         padding:0;
     }
     .section-3{
@@ -415,7 +415,6 @@ p{
     .image-section-3 img:nth-child(2){
         display:block;
         padding: 0;
-        width: 120%;
     }
     .free-side{
         padding:0;
