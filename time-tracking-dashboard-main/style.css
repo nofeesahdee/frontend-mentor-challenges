@@ -151,22 +151,22 @@ p{
     background-color: hsl(43, 84%, 65%);
     background-image: url(./images/icon-self-care.svg);
 }
-.daily-work, .weekly-work, .monthly-work{
+.daily-work, .monthly-work{
     display: none;
 }
-.daily-play,.weekly-play, .monthly-play{
+.daily-play, .monthly-play{
     display: none;
 }
-.daily-study,.weekly-study, .monthly-study{
+.daily-study,.monthly-study{
     display: none;
 }
-.daily-exercise,.weekly-exercise, .monthly-exercise{
+.daily-exercise,.monthly-exercise{
     display: none;
 }
-.daily-social,.weekly-social, .monthly-social{
+.daily-social,.monthly-social{
     display: none;
 }
-.daily-self-care,.weekly-self-care, .monthly-self-care{
+.daily-self-care,.monthly-self-care{
     display: none;
 }
 @media(max-width:700px) {
@@ -204,22 +204,22 @@ p{
     .time small{
         align-self: center;
     }
-    .daily-work, .weekly-work, .monthly-work{
+    .daily-work,.monthly-work{
         display: none;
     }
-    .daily-play,.weekly-play, .monthly-play{
+    .daily-play,.monthly-play{
         display: none;
     }
-    .daily-study,.weekly-study, .monthly-study{
+    .daily-study,.monthly-study{
         display: none;
     }
-    .daily-exercise,.weekly-exercise, .monthly-exercise{
+    .daily-exercise,.monthly-exercise{
         display: none;
     }
-    .daily-social,.weekly-social, .monthly-social{
+    .daily-social,.monthly-social{
         display: none;
     }
-    .daily-self-care, .weekly-self-care, .monthly-self-care{
+    .daily-self-care,.monthly-self-care{
         display: none;
     }
 }
