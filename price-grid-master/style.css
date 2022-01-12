@@ -1,0 +1,89 @@
+body{
+    font-family: 'Karla', sans-serif;
+    font-weight:400;
+    font-size: 16px;
+    background-color: hsl(204, 43%, 93%);
+}
+
+@media screen and (min-width:760px){
+    .container{
+        display: grid; 
+        grid-template-columns: repeat(2,30%);
+        grid-auto-rows: minmax(200px,auto);
+        max-width: 960px;
+        margin:0 auto;
+        margin-top:150px;
+        justify-content: center;
+        grid-template-areas: 
+        "firstChild firstChild"
+        "secondChild thirdChild";    
+    }
+
+    .firstChild{
+        border-top-left-radius:1em ;
+        border-top-right-radius:1em ;
+    }
+
+    .secondChild{
+        border-bottom-left-radius:1em ;
+    }
+
+    .thirdChild{
+        border-bottom-right-radius:1em ;
+    }
+}
+
+.firstChild{
+    padding:30px;
+    background-color: white;   
+    grid-area: firstChild;
+}
+
+.secondChild{
+    background-color:hsl(179, 62%, 43%);
+    color: white;
+    padding:30px;
+    grid-area: secondChild;
+}
+
+.thirdChild{
+    background-color:  hsl(179, 61%, 53%);
+    color: white;
+    padding:30px;
+    grid-area: thirdChild;
+}
+
+.regButton{
+    background-color:  hsl(71, 73%, 54%);
+    color: white;
+    margin-top: 5px;
+    padding: 8px;
+    width: 13em;
+    border-radius: 0.4em;
+    border-color:  hsl(71, 73%, 54%);
+    cursor: pointer;
+}
+
+header{
+    color:  hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+
+.firstChild section{
+    color:hsl(71, 73%, 54%) ;
+    padding-top: 15px;
+}
+
+.firstChild p{
+    color:  hsl(218, 22%, 67%);
+}
+
+.secondChild p{
+    padding-top: 10px;
+}
+
+p{
+    font-size: 11px;
+    font-weight: 100;
+    word-spacing: 2px;
+}
