@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    font-size: 16px;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 150px;
+    width: 100%;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: hsl(273, 4%, 51%);
+}
+nav a:hover{
+    color: hsl(270, 9%, 17%);
+}
