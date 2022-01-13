@@ -80,9 +80,9 @@ input:required:focus:invalid {
 input:required:invalid + .error{
     visibility: visible;
 }
-input:required:invalid .error{
+/* input:required:invalid .error{
     display: block;
-}
+} */
 .sub:hover{
     cursor: pointer;
     background-image: url('./images/icon-arrow.svg'), linear-gradient(135deg, hsl(0, 100%, 98%), hsl(0, 100%, 90%));
