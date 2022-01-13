@@ -10,7 +10,6 @@ body{
     height: 100vh;
     font-family: 'Josefin Sans', sans-serif;
 }
-
 .section-left{
     padding: 40px 40px 40px 150px;
     background:url(./images/bg-pattern-desktop.svg) no-repeat ;
@@ -32,13 +31,6 @@ h1{
 h1 span{
     color: hsl(0, 36%, 70%);
     font-weight: 300;
-}
-p{
-    color: hsl(0, 36%, 70%);
-    font-weight: 400;
-    line-height: 30px;
-    font-size: 16px;
-    margin-bottom: 40px;
 }
 input[type="email"]{
     width: 400px;
@@ -73,19 +65,23 @@ input[type="email"]:focus{
     border: 2px solid hsl(0, 93%, 68%);
 }
 .error {
-    display: block;
+    display: none;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 40px;
     color: hsl(0, 93%, 68%);
     text-align: left;
     padding-top: 15px;
-    font-size: 14px;
 }
 input:required:focus:invalid {
     background: url("images/icon-error.svg") no-repeat 75% 50%;
     background-size: 15px;
 }
-
 input:required:invalid + .error{
     visibility: visible;
+}
+input:required:invalid .error{
+    display: block;
 }
 .sub:hover{
     cursor: pointer;
