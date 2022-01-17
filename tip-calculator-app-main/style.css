@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: hsl(185, 41%, 84%);
+}
+main{
+    background-color:#fff;
+    padding: 50px;
+    display: flex;
+}
