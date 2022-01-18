@@ -9,46 +9,51 @@
   <title>Tip calculator app</title>
 </head>
 <body>
+  <h1>spli <br>tter</h1>
   <main>
+    
     <div class="left-side">
-      <div class="amount-display">
+      <div class="amount-display left">
         <p>Bill</p>
-        <input type="number" id="price" placeholder="$" class="amount">
+        <input type="text" id="price" placeholder="$" class="amount">
       </div>
 
-      <div class="tip">
+      <div class="tip left">
         <p>Select Tip %</p>
-        <div>
-          <button>5%</button>
-          <button>10%</button>
-          <button>15%</button>
-          <button>25%</button>
-          <button> 50%</button>
-          <button class="btn"> Custom</button>
+        <div class="tip-amount">
+          <button class="five">5%</button>
+          <button class="ten">10%</button>
+          <button class="fifteen">15%</button>
+          <button class="twentyfive">25%</button>
+          <button class="fifty"> 50%</button>
+          <button class="custom"> Custom</button>
         </div>
       </div>
-      <div>
+      <div class="people">
         <p>Number of People</p>
-        <div>
-          <input type="text" placeholder="">
+        <div class="people-input">
+          <input type="text" placeholder="" class="people">
           <img src="./images/icon-person.svg" alt="icon-person">
         </div>
       </div>
     </div>
+
     <div class="right-side">
-      <div>
-        <p>Tip Amount <small>/ person</small></p>
+      <div class="display">
+        <p>Tip Amount <br> <small>/ person</small></p>
         <div class="output">
-          <h1>$0.00</h1>
+          <h2 class="perperson">$0.00</h2>
         </div>
       </div>
-      <div>
-        <p> Total<small>/ person</small></p>
+
+      <div class="display">
+        <p> Total <br><small>/ person</small></p>
         <div class="output2">
-          <h1>$0.00</h1>
+          <h2 class="total">$0.00</h2>
         </div>
       </div>
-      <button class="submit"> Reset</button>
+
+      <button class="reset">Reset</button>
     </div>
   </main>
  <script src="./script.js"></script>

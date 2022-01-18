@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -5,14 +6,120 @@
 }
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
     background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+}
+h1{
+    text-transform: uppercase;
+    color: hsl(183, 100%, 15%);
+    text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
 }
 main{
+    position: relative;
+    width:70%;
     background-color:#fff;
-    padding: 50px;
+    padding: 30px;
     display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.left-side{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.left-side .left{
+    margin-bottom: 30px;
+}
+.left-side p{
+    color: hsl(183, 100%, 15%);
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family: inherit;
+}
+input{
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    position: relative;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+}
+input:focus{
+    border: 2px solid hsl(172, 67%, 45%);
+}
+.tip-amount{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+button{
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    padding: 10px;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 18px;
+}
+button:hover{
+    background-color:  hsl(172, 67%, 45%);
+    color:hsl(183, 100%, 15%);
+}
+.custom{
+    background-color:hsl(189, 41%, 97%);
+    color:hsl(183, 100%, 15%);
+}
+.people-input{
+    position: relative;
+}
+.people-input input{
+    position: relative;
+}
+.people-input img{
+    position: absolute;
+    left:25px;
+    top: 40%;
+}
+
+.right-side{
+    background-color: hsl(183, 100%, 15%);
+    padding: 30px;
+    width: 45%;
+    border-radius: 20px;
+}
+.display{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.display p{
+    color: hsl(0, 0%, 100%);
+}
+.display p small{
+    opacity: 0.7;
+}
+.display h2{
+    color:  hsl(172, 67%, 45%);
+    font-weight: 700;
+    font-size: 3em;
+}
+.reset{
+    background-color:  hsl(186, 14%, 43%);
+    color: hsl(183, 100%, 15%);
+    width: 100%;
+    margin-top: 80px;
+    text-transform: uppercase;
 }
