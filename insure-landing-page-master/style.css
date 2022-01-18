@@ -260,7 +260,7 @@ footer{
         color: hsl(0, 0%, 98%);
         width: 100%;
         align-self: center;
-        font-size: 1.5em;
+
     }
     button:hover{
         background-color: hsl(270, 9%, 17%);
