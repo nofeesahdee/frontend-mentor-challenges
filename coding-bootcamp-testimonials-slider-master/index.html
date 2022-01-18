@@ -11,27 +11,39 @@
 </head>
 <body>
   <main>
-    <div class="tanya">
-      <p>
-        “ I’ve been interested in coding for a while but never taken the jump, until now. 
-        I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
-        excited about the future. ”
-      </p>
-      <small><strong>Tanya Sinclair</strong>UX Engineer</small>
+    <div class="mySlides fade">
+      <div class="testimonial">
+        <p>
+          “ I’ve been interested in coding for a while but never taken the jump, until now. 
+          I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
+          excited about the future. ”
+        </p>
+        <small><strong>Tanya Sinclair</strong> UX Engineer</small>
+      </div>
+      
+      <img src="./images/image-tanya.jpg" alt="image-tanya">
     </div>
-    <div class="john">
-      <p>
-        “ If you want to lay the best foundation possible I’d recommend taking this course. 
-        The depth the instructors go into is incredible. I now feel so confident about 
-        starting up as a professional developer. ”
-      </p>
-      <small><strong>John Tarkpor</strong>Junior Front-end Developer</small>
+    <div class="mySlides fade">
+      <div class="testimonial">
+        <p>
+          “ If you want to lay the best foundation possible I’d recommend taking this course. 
+          The depth the instructors go into is incredible. I now feel so confident about 
+          starting up as a professional developer. ”
+        </p>
+        <small><strong>John Tarkpor</strong> Junior Front-end Developer</small>
+      </div>
+      
+      <img src="./images/image-john.jpg" alt="image-john">
+    </div>
+
+    <div class="icons">
+      <ion-icon name="chevron-back-outline" class="prev" onclick="plusSlides(-1)"></ion-icon>
+      <ion-icon name="chevron-forward-outline" class="next" onclick="plusSlides(1)"></ion-icon>
     </div>
   </main>
 
-  
-  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="./script.js"></script>
-  <script></script>
 </body>
 </html>
