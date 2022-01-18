@@ -10,17 +10,19 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    overflow: hidden;
     font-size: 32px;
     font-family: 'Inter', sans-serif;
+    background: url(./images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
 }
 main{
-    max-width:80%;
+    max-width:90%;
     position: relative;
     padding: 50px;
     background: url(./images/pattern-quotes.svg), url(./images/pattern-bg.svg);
     background-repeat: no-repeat, no-repeat ;
-    background-position: left, right;
+    background-position:top left, right;
     background-size:100px, contain;
 }
 .mySlides{
@@ -33,11 +35,19 @@ p{
     color:  hsl(240, 38%, 20%);
     font-weight: 300;
     font-family: inherit;
-    margin-bottom: 30px;
-    margin-right: -50px;
+    margin-bottom: 20px;
+    /* margin-right: -50px; */
+    font-size: 0.9em;
+    word-spacing:3px;
+    line-height: 40px;
+}
+small{
+    font-size: 0.5em;
+    color:  hsl(240, 38%, 20%);
 }
 .mySlides img{
-    width:50%;
+    width:45%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 .prev, .next {
     cursor: pointer;
@@ -54,8 +64,8 @@ p{
   .icons{
     display: flex;
     position: absolute;
-    bottom:5%;
-    right:35%;
+    bottom:4%;
+    right:30%;
     background-color: hsl(0, 0%, 100%);
     color: hsl(240, 18%, 77%);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
@@ -79,4 +89,33 @@ p{
   @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+  }
+  @media (max-width:800px){
+      main{
+        margin: 20px 0;
+        padding: 0;
+        background-position: center, top center;
+        background-size: 100px, 100%;
+      }
+      .mySlides{
+          display: flex;
+          flex-direction: column-reverse;
+          text-align: center;
+      }
+      .mySlides img{
+        width:100%;
+        margin-bottom:100px;
+    }
+    .icons{
+        position: absolute;
+        bottom:58%;
+        right:35%;
+    }
+    small{
+        font-size: 0.7em;
+    }
+    small strong{
+        display: block;
+        margin-bottom:0;
+    }
   }
