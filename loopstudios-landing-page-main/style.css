@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 15px;
+    font-family: 'Alata', sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px;
+    height: 100vh;
+    background: url(./images/desktop/image-hero.jpg) no-repeat;
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+}
+.desktop-nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav{}
+nav a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    margin-left: 30px;
+}
+.header-text{
+    align-self: center;
+}
+h1{
+    max-width: 50%;
+    font-size: 4em;
+    font-weight: 300;
+    padding: 30px;
+    text-transform: uppercase;
+    border: 3px solid hsl(0, 0%, 100%);
+    font-family: 'Josefin Sans', sans-serif;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding:100px;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.left-side{
+    position: relative;
+}
+.left-side img{
+    width: 100%;
+}
+.left-side::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 0;
+    top: 50px;
+    color: black;
+    width: 100%;
+}
+.right-side{
+    width: 50%;
+    align-self:flex-end;
+    margin-left: 50px;
+}
+.right-side h2{
+    font-size: 3em;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.right-side p{
+    color: hsl(0, 0%, 41%);
+    line-height:30px;
+}
+article{
+    padding: 50px 0;
+}
+.article-head{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.article-head h2{
+    font-size: 3em;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+button{
+    background-color: transparent;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.desktop-image-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    padding: 50px 0;
+}
+.desktop-image-grid div{
+    position: relative;
+    cursor: pointer;
+}
+.desktop-image-grid div img{
+    position: relative;
+}
+.desktop-image-grid div span{
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5em;
+    position: absolute;
+    bottom:25px;
+    left:25px;
+    width: 50%;
+}
