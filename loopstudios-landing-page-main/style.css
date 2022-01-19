@@ -112,7 +112,7 @@ button{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 35px;
-    padding: 50px 0;
+    padding-top: 50px;
 }
 .desktop-image-grid div{
     position: relative;
@@ -131,4 +131,30 @@ button{
     bottom:25px;
     left:25px;
     width: 50%;
+}
+footer{
+    width: 100%;
+    background-color: hsl(0, 0%, 0%);
+    padding: 50px 100px;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+ion-icon{
+    color: hsl(0, 0%, 100%);
+    margin-left: 30px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    margin-right: 30px;
 }
