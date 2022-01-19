@@ -11,28 +11,33 @@
 <body>
   <h1>spli <br>tter</h1>
   <main>
-    
     <div class="left-side">
       <div class="amount-display left">
         <p>Bill</p>
-        <input type="text" id="price" placeholder="$" class="amount">
+        <input type="text" id="price" placeholder="0" class="amount">
+        <span>$</span>
       </div>
 
       <div class="tip left">
         <p>Select Tip %</p>
         <div class="tip-amount">
-          <button class="five">5%</button>
-          <button class="ten">10%</button>
-          <button class="fifteen">15%</button>
-          <button class="twentyfive">25%</button>
-          <button class="fifty"> 50%</button>
-          <button class="custom"> Custom</button>
+          <button class="btn" value="0.05">5<span>%</span></button>
+          <button class="btn" value="0.10">10<span>%</span></button>
+          <button class="btn" value="0.15">15<span>%</span></button>
+          <button class="btn" value="0.25">25<span>%</span></button>
+          <button class="btn" value="0.50"> 50<span>%</span></button>
+         
+            <button class="custom" value="">Custom</button>
+            <input type="text" class="custom-input">
+       
+        
         </div>
       </div>
-      <div class="people">
+
+      <div class="peoplenumber">
         <p>Number of People</p>
         <div class="people-input">
-          <input type="text" placeholder="" class="people">
+          <input type="text" placeholder="0" class="people">
           <img src="./images/icon-person.svg" alt="icon-person">
         </div>
       </div>

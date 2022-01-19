@@ -1,65 +1,50 @@
-// All input fields
-const input = document.querySelectorAll('input')
-const bill = document.querySelector('.amount')
-const people = document.querySelector('.people')
-
-// All percentage buttons
-const buttons = document.querySelectorAll('button')
-const fivePercent = document.querySelector('.five')
-const tenPercent = document.querySelector('.ten')
-const fifteenPercent = document.querySelector('.fifteen')
-const twentyfivePercent = document.querySelector('.twentyfive')
-const fiftyPercent = document.querySelector('.fifty')
+// Global declarations
+const buttons = document.querySelectorAll('.btn')
+const perperson = document.querySelector('.perperson')
+const totalAmount = document.querySelector('.total')
+const reset = document.querySelector('.reset')
+const inputs = document.querySelectorAll('input')
+const customInput = document.querySelector('.custom-input')
 const custom = document.querySelector('.custom')
 
-// All output
-const perperson = document.querySelector('.perperson')
-const total = document.querySelector('.total')
-const reset = document.querySelector('.reset')
+buttons.forEach((button) => {
+    button.addEventListener('click', function() {
+        let buttonValue = button.value
+        let billAmount = document.querySelector('.amount').value
+        let peopleNumber = document.querySelector('.people').value
+       
+        let tipPerPerson = (buttonValue * billAmount).toFixed(2)
+        let total = (tipPerPerson * peopleNumber).toFixed(2)
 
+        let bill = document.querySelector('.amount')
+        let people = document.querySelector('.people')
 
-// buttons.forEach((button) => {
-//     button.addEventListener('click', function() {
-//         let tipPerPerson = bill.value * 5
-//         perperson.innerHTML = `$${tipPerPerson}`
-//         console.log(tipPerPerson)
-//     })
-     
-// })
-
-fivePercent.addEventListener('click', () =>{
-    let tipPerPerson = bill.value * 5 / 100
-    let totalTip = tipPerPerson * people.value
-    perperson.innerHTML = `$${tipPerPerson}`
-    total.innerHTML = `$${totalTip}`
-    console.log(totalTip)
+        if(billAmount === "" || peopleNumber === ""){
+            bill.classList.add('error')
+            people.classList.add('error')
+        }else if(billAmount <= 0 || peopleNumber <= 0){
+            alert('enter a valid input')
+        }else{
+            perperson.innerHTML = `$${tipPerPerson}`
+            totalAmount.innerHTML = `$${total}`
+            bill.classList.remove('error')
+            people.classList.remove('error')
+        }
+    })
 })
 
-tenPercent.addEventListener('click', () =>{
-    let tipPerPerson = bill.value * 10 / 100
-    let totalTip = tipPerPerson * people.value
-    perperson.innerHTML = `$${tipPerPerson}`
-    total.innerHTML = `$${totalTip}`
+custom.addEventListener('click', () =>{
+    custom.style.display = 'none'
+    customInput.style.display = 'block'
 })
 
-fifteenPercent.addEventListener('click', () =>{
-    let tipPerPerson = bill.value * 15 / 100
-    let totalTip = tipPerPerson * people.value
-    perperson.innerHTML = `$${tipPerPerson}`
-    total.innerHTML = `$${totalTip}`
+customInput.addEventListener('mouseLeave', () =>{
+    let billdisplay = document.querySelector('.amount')
+
+    billdisplay.innerHTML = customInput.value
+    // let billAmount = customInput.value
 })
 
-twentyfivePercent.addEventListener('click', () =>{
-    let tipPerPerson = bill.value * 25 / 100
-    let totalTip = tipPerPerson * people.value
-    perperson.innerHTML = `$${tipPerPerson}`
-    total.innerHTML = `$${totalTip}`
+reset.addEventListener('click', () => {
+    inputs.innerText = 0
 })
-
-fiftyPercent.addEventListener('click', () =>{
-    let tipPerPerson = bill.value * 50 / 100
-    let totalTip = tipPerPerson * parseint(people.value)
-    perperson.innerHTML = `$${tipPerPerson}`
-    total.innerHTML = `$${totalTip}`
-})
-

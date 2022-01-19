@@ -38,6 +38,19 @@ main{
 .left-side .left{
     margin-bottom: 30px;
 }
+.amount-display{
+    position: relative;
+}
+.amount-display input{
+    position: relative;
+}
+.amount-display span{
+    font-size: 24px;
+    color: hsl(184, 14%, 56%);
+    position: absolute;
+    left:20px;
+    top: 50%;
+}
 .left-side p{
     color: hsl(183, 100%, 15%);
     margin-bottom: 10px;
@@ -51,12 +64,20 @@ input{
     border-radius: 5px;
     padding: 10px 20px;
     width: 100%;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
     outline: none;
+    text-align: right;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 700;
 }
 input:focus{
     border: 2px solid hsl(172, 67%, 45%);
+}
+input.error{
+    border: 2px solid red;
+    transition: .2s ease;
 }
 .tip-amount{
     display: grid;
@@ -72,7 +93,7 @@ button{
     cursor: pointer;
     font-family: 'Space Mono', monospace;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
 }
 button:hover{
     background-color:  hsl(172, 67%, 45%);
@@ -82,6 +103,9 @@ button:hover{
     background-color:hsl(189, 41%, 97%);
     color:hsl(183, 100%, 15%);
 }
+.custom-input{
+    display: none;
+}
 .people-input{
     position: relative;
 }
@@ -90,10 +114,9 @@ button:hover{
 }
 .people-input img{
     position: absolute;
-    left:25px;
+    left:20px;
     top: 40%;
 }
-
 .right-side{
     background-color: hsl(183, 100%, 15%);
     padding: 30px;
@@ -114,7 +137,7 @@ button:hover{
 .display h2{
     color:  hsl(172, 67%, 45%);
     font-weight: 700;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 .reset{
     background-color:  hsl(186, 14%, 43%);
