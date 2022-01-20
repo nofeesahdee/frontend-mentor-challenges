@@ -27,17 +27,19 @@ header{
     display: flex;
     justify-content: space-between;
 }
-nav{}
 nav a{
     text-decoration: none;
     color: hsl(0, 0%, 100%);
     margin-left: 30px;
+    padding-bottom: 10px;
 }
-.header-text{
-    align-self: center;
+nav a:hover{
+    border-bottom: 2px solid hsl(0, 0%, 100%);
 }
 h1{
+    margin-top: 100px;
     max-width: 50%;
+   align-self: center;
     font-size: 4em;
     font-weight: 300;
     padding: 30px;
@@ -60,17 +62,8 @@ section{
     position: relative;
 }
 .left-side img{
-    width: 100%;
-}
-.left-side::before{
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    right: 0;
-    top: 50px;
-    color: black;
-    width: 100%;
+   width:100%;
+    position: relative;
 }
 .right-side{
     width: 50%;
@@ -103,10 +96,15 @@ article{
     font-weight: 300;
 }
 button{
+    border: 2px solid hsl(0, 0%, 0%);
     background-color: transparent;
     padding: 10px 30px;
     text-transform: uppercase;
     cursor: pointer;
+}
+button:hover{
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
 }
 .desktop-image-grid{
     display: grid;
@@ -132,6 +130,9 @@ button{
     left:25px;
     width: 50%;
 }
+.mobile-image-grid{
+    display: none;
+}
 footer{
     width: 100%;
     background-color: hsl(0, 0%, 0%);
@@ -148,13 +149,157 @@ ion-icon{
     font-size: 25px;
     cursor: pointer;
 }
+ion-icon:hover{
+    transform: scale(1.2);
+}
 .footer-bottom{
     display: flex;
     justify-content: space-between;
-    color: white;
+    color: hsl(0, 0%, 100%);
 }
 a{
     text-decoration: none;
     color: hsl(0, 0%, 100%);
     margin-right: 30px;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+a:hover{
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+}
+.mobile-menu{
+    display: none;
+}
+.open, .close{
+    display: none;
+}
+@media (max-width:500px){
+    header{
+        padding: 50px 20px;
+        background: url(./images/mobile/image-hero.jpg) no-repeat;
+    }
+    .desktop-nav nav {
+        display: none;
+    }
+    h1{
+        margin-top: 100px;
+        max-width: 100%;
+        margin-top: 150px;
+        font-size: 3em;
+        padding: 20px;
+    }
+    .open{
+        display: block;
+    }
+    main{
+        width: 100%;
+        padding: 50px 20px;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    .right-side{
+        width: 100%;
+        text-align: center;
+        margin:0;
+        margin-top: 50px;
+    }
+    .right-side h2{
+        font-size: 2.5em;
+    }
+    .article-head{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        margin-top:0;
+    }
+    .article-head h2{
+        margin-bottom: 10px;
+        font-size:2.5em;
+    }
+    .desktop-image-grid{
+        display: none;
+    }
+    .mobile-image-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-image-grid img{
+        width: 100%;
+        position: relative;
+        margin-top: 20px;
+    }
+    .mobile-image-grid div{
+        position: relative;
+        cursor: pointer;
+    }
+    .mobile-image-grid div span{
+        text-transform: uppercase;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        color: hsl(0, 0%, 100%);
+        font-size: 1.5em;
+        position: absolute;
+        bottom:25px;
+        left:25px;
+        width: 40%;
+    }
+    footer{
+        text-align: center;
+        width: 100%;
+        padding: 50px 20px;
+    }
+    .footer-top{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .footer-top img{
+        margin-bottom: 20px;
+    }
+    ion-icon{
+        color: hsl(0, 0%, 100%);
+        margin-left:0;
+        margin-right: 10px;
+    }
+    .footer-bottom{
+        display: flex;
+       flex-direction: column;
+       text-align: center;
+        color: hsl(0, 0%, 100%);
+    }
+    a{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        margin-right:0;
+    }
+    .mobile-menu{
+        background: hsl(0, 0%, 0%);
+        color: hsl(0, 0%, 100%);
+        display:none;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        transition: 0.4s ease;
+        top: 0;
+        left: 0;
+        padding: 50px 20px;
+    }
+    .mobile-top{
+        display: flex;
+        justify-content: space-between;
+    }
+    .mobile-menu nav{
+        display: flex;
+        flex-direction: column;
+        margin-top:50px;
+        width: 100px;
+    }
+    .mobile-menu nav a{
+        margin-top:20px;
+        opacity: 0.7;
+    }
 }
