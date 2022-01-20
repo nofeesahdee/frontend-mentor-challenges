@@ -32,6 +32,7 @@ nav a{
     color: hsl(0, 0%, 100%);
     margin-left: 30px;
     padding-bottom: 10px;
+    width: 100px;
 }
 nav a:hover{
     border-bottom: 2px solid hsl(0, 0%, 100%);
