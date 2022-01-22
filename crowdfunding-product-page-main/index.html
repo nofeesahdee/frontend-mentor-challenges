@@ -5,25 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Crowdfunding product page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <title> Crowdfunding product page</title>
 </head>
 <body>
-  About
-  Discover
-  Get Started
+  <header>
+    <div class="logo"><img src="./images/logo.svg" alt="logo"></div>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Discover</a>
+      <a href="#">Get Started</a>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="section-1">
+      <img src="./images/logo-mastercraft.svg" alt="logo-mastercraft" class="logo-mastercraft">
+      <h1> Mastercraft Bamboo Monitor Riser</h1>
+      <p> A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
 
-  Mastercraft Bamboo Monitor Riser
-  A beautiful & handcrafted monitor stand to reduce neck and eye strain.
+      <div class="buttons">
+        <input type="button" value="Back this project">
 
-  Back this project
-  Bookmark
+        <label class="switch">
+          <input type="checkbox" id="checkbox">
+          <label for="checkbox" class="toggle">Bookmark</label>
+          
+          <img src="./images/icon-bookmark.svg" alt="icon-bookmark" class="slider round">
+        </label>
+      </div>
+
+    </div>
+
+    <div class="section-2"></div>
+    <div class="section-3"></div>
+  </main>
+  
+
+ 
+ 
+
+  
+ 
 
   $89,914 of $100,000 backed
   5,007 total backers
@@ -114,5 +137,6 @@
   Got it!
 
   <!-- Success modal end -->
+  <script src="./script.js"></script>
 </body>
 </html>
