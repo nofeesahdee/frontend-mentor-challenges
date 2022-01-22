@@ -31,22 +31,60 @@ header nav a{
     font-weight: 700;
 }
 main{
-    max-width:800px;
+    max-width:600px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    /* position: absolute; */
+    position: absolute;
+    top: 50%;
 }
-.section-1{
+.section-1, .section-2, .section-3{
     background-color: hsl(0, 0%, 100%);
-    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
     padding: 30px;
     position: relative;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    font-family: inherit;
 }
-/* .logo-mastercraft{
+.logo-mastercraft{
     position: absolute;
-} */
+} 
 .buttons{
     display: flex;
     justify-content: space-between;
+} 
+
+.section-2 .numbers{
+    display: flex;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.numbers-details:nth-child(2),
+.numbers-details:nth-child(3){
+    border-left: 2px solid hsla(0, 0%, 48%, 0.5);
+    padding-left: 30px;
+    margin-left: 60px;
+}
+h2{
+    margin-bottom:5px;
+}
+small{
+    color:hsl(0, 0%, 48%);
+    font-weight: 700;
+}
+.progress{
+    width: 100%;
+    height: 10px;
+    border-radius: 20px;
+    background-color: hsla(0, 0%, 48%, 0.3);
+    position: relative;
+}.progress-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background-color:  hsl(176, 50%, 47%);
+    border-radius: 20px;
 }
