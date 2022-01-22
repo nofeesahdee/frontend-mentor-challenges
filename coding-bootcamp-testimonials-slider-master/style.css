@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-size: 32px;
+    font-size: 20px;
     font-family: 'Inter', sans-serif;
     background: url(./images/pattern-curve.svg);
     background-repeat: no-repeat;
@@ -33,13 +33,12 @@ main{
 }
 p{
     color:  hsl(240, 38%, 20%);
-    font-weight: 300;
+    font-weight: 700;
     font-family: inherit;
     margin-bottom: 20px;
     /* margin-right: -50px; */
-    font-size: 0.9em;
     word-spacing:3px;
-    line-height: 40px;
+    line-height: 30px;
 }
 small{
     font-size: 0.5em;
@@ -92,7 +91,7 @@ small{
   }
   @media (max-width:800px){
       main{
-        margin: 20px 0;
+        margin: 10px 0;
         padding: 0;
         background-position: center, top center;
         background-size: 100px, 100%;
@@ -104,15 +103,16 @@ small{
       }
       .mySlides img{
         width:100%;
-        margin-bottom:100px;
+        margin-bottom:60px;
     }
     .icons{
         position: absolute;
-        bottom:58%;
+        bottom:50%;
         right:35%;
     }
     small{
         font-size: 0.7em;
+        margin-bottom: 10px;
     }
     small strong{
         display: block;
