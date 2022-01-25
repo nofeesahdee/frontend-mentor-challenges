@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(./images/bg-desktop.png) hsl(229, 57%, 11%) no-repeat bottom;
+    font-family: 'Raleway', sans-serif;
+}
+main{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+.left-side{
+    background-color: hsl(228, 56%, 26%);
+    width: 300px;
+    height: 200px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    border-top-right-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo{
+    margin-bottom: 30px;
+}
+.icons-body{
+    display: flex;
+    justify-content: space-between;
+}
+.icons{
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: hsl(229, 57%, 11%);
+    text-align: center;
+}
+/* .icons img{
+    align-self: center;
+} */
+.right-side{
+    background-color: hsl(228, 56%, 26%);
+    width: 400px;
+    border-radius: 10px;
+    position: relative;
+    height: 120px;
+    align-self: flex-end;
+    padding: 20px;
+}
+.progress{
+    padding: 5px;
+    position: relative;
+    width: 100%;
+    height: 15px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 50px;
+}
+.progress-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 50px;
+}
+.dot{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50px;
+    border-radius: 50%;
+    color: #fff;
+}
