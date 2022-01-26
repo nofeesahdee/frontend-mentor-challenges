@@ -9,7 +9,7 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url(./images/bg-desktop-dark.jpg) hsl(235, 21%, 11%) no-repeat top;
+  background: url(images/bg-desktop-dark.jpg) hsl(235, 21%, 11%) no-repeat top;
   font-family: 'Josefin Sans', sans-serif;
 }
 .container{
