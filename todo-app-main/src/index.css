@@ -15,7 +15,6 @@ body{
 }
 .container{
   width: 600px;
-  /* border: 2px solid red; */
 }
 header{
   color:hsl(0, 0%, 100%);
@@ -25,10 +24,10 @@ header{
   margin-bottom: 20px;
   width: 100%;
 }
-.details{
+/* .details{
   margin-bottom:50px ;
-}
-.details #input-box{
+} */
+/* .details #input-box{
   display: block;
   border: none;
   outline: none;
@@ -38,12 +37,13 @@ header{
   font-size: 18px;
   border-radius: 5px;
   color: hsl(234, 39%, 85%);
-}
+} */
 .tasks{
   font-size: 18px;
   background-color: hsl(235, 24%, 19%);
   border-radius: 5px;
   color: hsl(234, 39%, 85%);
+  min-height: 50px;
 }
 .task{
   width: 100%;
@@ -58,6 +58,11 @@ header{
 .task p img{
   cursor: pointer;
 }
+.bottom{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
 /* creating the custom checkbox */
 .container {
   display: block;
@@ -71,7 +76,6 @@ header{
   height: 0;
   width: 0;
 }
-
 /* Create a custom radio button */
 .checkmark {
   cursor: pointer;

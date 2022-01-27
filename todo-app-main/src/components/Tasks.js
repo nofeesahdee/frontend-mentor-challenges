@@ -6,6 +6,15 @@ const Tasks = ({ tasks, onDelete }) => {
         {tasks.map((task) => (
           <Task key={task.id} task={task} onDelete={onDelete}/>
       ))}
+      <div className="bottom">
+          <div>5 items left</div>
+          <div>
+              <a href="/">All</a>
+              <a href="/">Active</a>
+              <a href="/">Completes</a>
+          </div>
+          <div>Clear Completed</div>
+      </div>
     </div>
   )
 };
