@@ -6,7 +6,6 @@ const Header = () => {
         console.log('click')
     }
 
-
   return(
     <header>
         <h1>Todo</h1>

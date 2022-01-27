@@ -9,12 +9,12 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url(images/bg-desktop-dark.jpg) hsl(235, 21%, 11%) no-repeat top;
+  background: url(./components/images/bg-desktop-dark.jpg) hsl(235, 21%, 11%) no-repeat top;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 18px;
 }
 .container{
-  width: 500px;
+  width: 600px;
   /* border: 2px solid red; */
 }
 header{
@@ -25,13 +25,11 @@ header{
   margin-bottom: 20px;
   width: 100%;
 }
-.circle{
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 2px solid white;
+.details{
+  margin-bottom:50px ;
 }
-input{
+.details #input-box{
+  display: block;
   border: none;
   outline: none;
   width: 100%;
@@ -39,4 +37,68 @@ input{
   padding: 10px;
   font-size: 18px;
   border-radius: 5px;
+  color: hsl(234, 39%, 85%);
+}
+.tasks{
+  font-size: 18px;
+  background-color: hsl(235, 24%, 19%);
+  border-radius: 5px;
+  color: hsl(234, 39%, 85%);
+}
+.task{
+  width: 100%;
+  padding:20px;
+  border-bottom: 1px solid hsl(234, 39%, 85%);
+}
+.task p{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+}
+.task p img{
+  cursor: pointer;
+}
+/* creating the custom checkbox */
+.container {
+  display: block;
+  position: relative;
+  
+}
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 1px solid hsl(234, 39%, 85%);
+  border-radius: 50%;
+}
+/* When the radio button is checked, add background color */
+.container input:checked ~ .checkmark {
+  background:linear-gradient(to right, hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+}
+/* Create the indicator - hidden when not checked */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 2.5px;
+  left: 2.5px;
+  width: 13px;
+  height: 13px;
+  background: url(./components/images/icon-check.svg) no-repeat center;
+}
+/* Show the indicator when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
 }
