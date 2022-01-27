@@ -21,29 +21,37 @@ header{
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 100%;
 }
-/* .details{
-  margin-bottom:50px ;
-} */
-/* .details #input-box{
+.details{
+  margin-bottom:30px ;
+}
+.details #input-box{
   display: block;
   border: none;
   outline: none;
   width: 100%;
+  height:50px;
   background-color: hsl(235, 24%, 19%);
   padding: 10px;
+  padding-left: 60px;
   font-size: 18px;
   border-radius: 5px;
   color: hsl(234, 39%, 85%);
-} */
+}
+.details .checkmark {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
 .tasks{
   font-size: 18px;
   background-color: hsl(235, 24%, 19%);
   border-radius: 5px;
   color: hsl(234, 39%, 85%);
-  min-height: 50px;
+  min-height: 0;
 }
 .task{
   width: 100%;
@@ -67,10 +75,9 @@ header{
 .container {
   display: block;
   position: relative;
-  
 }
 /* Hide the browser's default radio button */
-.container input {
+.container .checkbox {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -103,6 +110,6 @@ header{
   background: url(./components/images/icon-check.svg) no-repeat center;
 }
 /* Show the indicator when checked */
-.container input:checked ~ .checkmark:after {
+.container .checkbox:checked ~ .checkmark:after {
   display: block;
 }

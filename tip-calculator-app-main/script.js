@@ -66,5 +66,6 @@ customInput.addEventListener('click', () =>{
 
 // RESET
 reset.addEventListener('click', () => {
-
+    perperson.innerHTML = '$0.00'
+    totalAmount.innerHTML = '$0.00'
 })
