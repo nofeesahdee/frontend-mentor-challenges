@@ -14,7 +14,8 @@ body{
   font-size: 18px;
 }
 .container{
-  width: 600px;
+  max-width:600px;
+  width: 500px;
 }
 header{
   color:hsl(0, 0%, 100%);

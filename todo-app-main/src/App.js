@@ -27,16 +27,22 @@ function App() {
       }
   ])
 // Add Items
+const addTask = (task) => {
+  const id = Math.floor(Math.random() * 1000) + 1;
+  const newTask = {id, ...task}
+  setTasks([...tasks, newTask])
+}
 
 // Delete Items
 const deleteItems = (id) => {
  setTasks(tasks.filter((task) => task.id !== 
  id))
 }
+
   return (
     <div className="container">
       <Header />
-      <Input />
+      <Input onAdd={addTask}/>
       <Tasks tasks={tasks} onDelete={deleteItems}/>
     </div>
   );
