@@ -3,16 +3,16 @@ import iconMoon from './images/icon-moon.svg'
 
 const Header = () => {
     const onClick = () => {
-        console.log('click')
+        // console.log('click')
     }
 
   return(
     <header>
         <h1>Todo</h1>
-        <div>
+        {/* <div>
             <img onClick={onClick} src={iconSun} alt="icon-sun" />
             <img src={iconMoon} alt="icon-sun" />
-        </div>
+        </div> */}
     </header>
   ) 
 };

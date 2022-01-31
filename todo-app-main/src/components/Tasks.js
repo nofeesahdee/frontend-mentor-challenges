@@ -8,7 +8,7 @@ const Tasks = ({ tasks, onDelete }) => {
       ))}
       <div className="bottom">
           <div>5 items left</div>
-          <div>
+          <div className="links">
               <a href="/">All</a>
               <a href="/">Active</a>
               <a href="/">Completes</a>

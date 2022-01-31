@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from './components/Header'
 import Input from './components/Input';
 import Tasks from './components/Tasks';
@@ -7,23 +7,23 @@ function App() {
   const [tasks, setTasks] = useState ([
         {
             id: 1,
-            text: 'book'
+            text: 'Jog around the park 3x'
         },
         {
             id: 2,
-            text: 'biro'
+            text: '10 minutes medication'
         },
         {
             id: 3,
-            text: 'spen'
+            text: 'Read for 1 hr'
         },
         {
           id: 4,
-          text: 'biro'
+          text: 'Pick up groceries'
       },
       {
           id: 5,
-          text: 'spen'
+          text: 'Complete Todo App on frontend mentor'
       }
   ])
 // Add Items

@@ -14,8 +14,8 @@ body{
   font-size: 18px;
 }
 .container{
-  max-width:600px;
-  width: 500px;
+  width:600px;
+  margin: 50px auto;
 }
 header{
   color:hsl(0, 0%, 100%);
@@ -56,24 +56,28 @@ header{
 }
 .task{
   width: 100%;
-  padding:20px;
+  padding:25px;
   border-bottom: 1px solid hsl(234, 39%, 85%);
 }
 .task p{
   display: flex;
   justify-content: space-between;
   padding-left: 40px;
+  cursor: pointer;
+}
+.task p:hover{
+  color: hsl(236, 33%, 92%);
 }
 .task p img{
   cursor: pointer;
 }
 .bottom{
-  padding: 20px;
+  padding: 25px;
   display: flex;
   justify-content: space-between;
 }
 /* creating the custom checkbox */
-.container {
+.label-container {
   display: block;
   position: relative;
 }
@@ -105,7 +109,7 @@ header{
   position: absolute;
   display: none;
   top: 2.5px;
-  left: 2.5px;
+  left: 3px;
   width: 13px;
   height: 13px;
   background: url(./components/images/icon-check.svg) no-repeat center;
@@ -113,4 +117,9 @@ header{
 /* Show the indicator when checked */
 .container .checkbox:checked ~ .checkmark:after {
   display: block;
+}
+.links a{
+  text-decoration: none;
+  color: hsl(234, 39%, 85%);
+  margin-right: 10px;
 }
