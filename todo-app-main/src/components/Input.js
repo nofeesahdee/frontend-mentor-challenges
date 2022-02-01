@@ -17,14 +17,14 @@ const Input = ({ onAdd }) => {
   }
 
   return (
-    <form className='details' onClick={onClick}>
-        <label className='container'>
+    <form className='details' onDoubleClick={onClick}>
+        <label className='label-container'>
             <input type="checkbox" className='checkbox' />
             <span className='checkmark'></span>
 
             <input type="text" name="" id="input-box"
-             placeholder="Create a new to ..." 
-             value={text} onChange={(e) => setText(e.target.value)}/>
+             placeholder="Create a new todo ..." 
+          value={text} onChange={(e) => setText(e.target.value)}/>
         </label>
     </form>
   )

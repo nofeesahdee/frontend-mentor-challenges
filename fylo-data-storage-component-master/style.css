@@ -14,14 +14,14 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 main{
-    width: 55%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
 }
 .left-side{
     background-color: hsl(228, 56%, 26%);
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 210px;
     padding: 20px 40px;
     border-radius: 10px;
     border-top-right-radius: 50%;

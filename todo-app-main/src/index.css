@@ -15,18 +15,24 @@ body{
 }
 .container{
   width:600px;
-  margin: 50px auto;
+  margin: 20px auto;
+}
+.para{
+  text-align: center;
+  color: hsl(234, 11%, 52%);
+  margin-top: 40px;
+  font-size: 15px;
 }
 header{
   color:hsl(0, 0%, 100%);
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   width: 100%;
 }
 .details{
-  margin-bottom:30px ;
+  margin-bottom:20px ;
 }
 .details #input-box{
   display: block;
@@ -39,7 +45,8 @@ header{
   padding-left: 60px;
   font-size: 18px;
   border-radius: 5px;
-  color: hsl(234, 39%, 85%);
+  color: hsl(234, 11%, 52%);
+  font-family: inherit;
 }
 .details .checkmark {
   cursor: pointer;
@@ -51,13 +58,13 @@ header{
   font-size: 18px;
   background-color: hsl(235, 24%, 19%);
   border-radius: 5px;
-  color: hsl(234, 39%, 85%);
+  color: hsl(234, 11%, 52%);
   min-height: 0;
 }
 .task{
   width: 100%;
   padding:25px;
-  border-bottom: 1px solid hsl(234, 39%, 85%);
+  border-bottom: 1px solid hsl(234, 11%, 52%);
 }
 .task p{
   display: flex;
@@ -68,8 +75,12 @@ header{
 .task p:hover{
   color: hsl(236, 33%, 92%);
 }
+.task p:hover img{
+  display: inline;
+}
 .task p img{
   cursor: pointer;
+  display: none;
 }
 .bottom{
   padding: 25px;
@@ -120,6 +131,9 @@ header{
 }
 .links a{
   text-decoration: none;
-  color: hsl(234, 39%, 85%);
-  margin-right: 10px;
+  color: hsl(234, 11%, 52%);
+  margin-right: 15px;
+}
+.links a:hover{
+  color: hsl(220, 98%, 61%);
 }
