@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(./images/bg-top.svg), url(./images/bg-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, bottom left;
+    background-size:300px;
+    background-color: hsl(240, 78%, 98%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px
+}
+h1{
+    color: hsl(233, 13%, 49%);
+    margin-bottom: 20px;
+}
+.toggle{
+    margin-bottom: 40px;
+    color: hsl(234, 14%, 74%);
+}
+.checkbox{
+    margin: 0 20px;
+}
+main{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+.basic,
+.professional,
+.master{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(233, 13%, 49%);
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    width:310px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+.basic small,
+.professional small,
+.master small{
+    /* margin-bottom:30px; */
+    font-size: 15px;
+}
+.basic h1,
+.professional h1,
+.master h1{
+    font-size: 3em;
+    padding: 15px 0;
+    color: hsl(232, 13%, 33%);
+    border-bottom: 1px solid  hsl(234, 14%, 74%);
+}
+.basic p,
+.professional p,
+.master p{
+    border-bottom: 1px solid  hsl(234, 14%, 74%);
+    padding: 15px 0;
+}
+button{
+    border: none;
+    width: 100%;
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    margin-top: 30px;
+    padding: 15px;
+    text-transform:uppercase;
+    font-weight: 700;
+    color: hsl(240, 78%, 98%);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+.professional{
+    background-color: hsl(237, 63%, 64%);
+    color: hsl(240, 78%, 98%);
+    transform: scale(1.12);
+    border-bottom: 1px solid  hsl(240, 78%, 98%);
+}
+.professional h1{
+    color: hsl(240, 78%, 98%);
+    border-bottom: 1px solid  hsl(240, 78%, 98%);
+}
+.btn{
+    background: hsl(240, 78%, 98%);
+    color: hsl(237, 63%, 64%);
+}
