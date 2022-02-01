@@ -56,9 +56,9 @@ main{
     /* margin-bottom:30px; */
     font-size: 15px;
 }
-.basic h1,
-.professional h1,
-.master h1{
+.basic .componentSubscription,
+.professional .componentSubscription,
+.master .componentSubscription{
     font-size: 3em;
     padding: 15px 0;
     color: hsl(232, 13%, 33%);
@@ -94,7 +94,7 @@ button:hover{
     transform: scale(1.1);
     border-bottom: 1px solid  hsl(240, 78%, 98%);
 }
-.professional h1{
+.professional .componentSubscription{
     color: hsl(240, 78%, 98%);
     border-bottom: 1px solid  hsl(240, 78%, 98%);
 }
@@ -116,6 +116,9 @@ button:hover{
     display: inline-block;
     width: 60px;
     height: 34px;
+}
+.slider.toggle{
+    right: 50%;
 }
   
 /* Hide default HTML checkbox */
