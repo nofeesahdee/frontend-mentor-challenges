@@ -12,6 +12,7 @@ body{
     min-height: 100vh;
     background: url(./images/bg-desktop.png) hsl(229, 57%, 11%) no-repeat bottom;
     font-family: 'Raleway', sans-serif;
+    font-size: 14px;
 }
 main{
     width: 60%;
@@ -21,46 +22,74 @@ main{
 .left-side{
     background-color: hsl(228, 56%, 26%);
     width: 350px;
-    height: 210px;
-    padding: 20px 40px;
+    height: 200px;
+    padding-left: 30px;
     border-radius: 10px;
     border-top-right-radius: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
 .logo{
     margin-bottom: 30px;
 }
 .icons-body{
     display: flex;
-    justify-content: space-between;
 }
 .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 5px;
     width: 40px;
     height: 40px;
     background-color: hsl(229, 57%, 11%);
-    text-align: center;
+    margin-right: 25px;
 }
-/* .icons img{
-    align-self: center;
-} */
 .right-side{
+    position: relative;
     background-color: hsl(228, 56%, 26%);
-    width: 400px;
+    width: 450px;
+    height: 150px;
     border-radius: 10px;
     position: relative;
-    height: 120px;
     align-self: flex-end;
-    padding: 20px;
+    padding:30px;
+}
+.right-side p{
+    color: hsl(243, 100%, 93%);
+    margin: 15px 0;
+}
+.anchor{
+    position: absolute;
+    top: -35px;
+    right: 30px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px;
+    font-size: 3em;
+    font-weight: 700;
+    border-radius: 10px;
+}
+.anchor small{
+    color: hsl(229, 7%, 55%);
+    font-size: 14px;
+    text-align: center;
+}
+.anchor::before
+{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(225deg, #fff 0%,#fff 50%, transparent 50%,transparent);
 }
 .progress{
     padding: 5px;
     position: relative;
     width: 100%;
-    height: 15px;
+    height: 12px;
     background-color: hsl(229, 57%, 11%);
     border-radius: 50px;
 }
@@ -68,7 +97,7 @@ main{
     position: absolute;
     top: 0;
     left: 0;
-    width: 70%;
+    width: 75%;
     height: 100%;
     background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
     border-radius: 50px;
@@ -78,7 +107,43 @@ main{
     top: 0;
     right: 0;
     height: 100%;
-    width: 50px;
-    border-radius: 50%;
-    color: #fff;
+    border-radius: 50px;
+    width: 12px;
+    background-color: #fff;
+}
+.progress-details{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+@media (max-width:600px){
+    body{
+        background: url(./images/bg-mobile.png);
+    }
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        padding: 0;
+    }
+    .left-side{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .right-side{
+        position: relative;
+        width: 100%;
+    }
+    .anchor{
+        position: absolute;
+        top: 120px;
+        right:30%;
+    }
+    .anchor::before
+    {
+        content: '';
+        width: 0px;
+        height: 0px;
+    }
 }
