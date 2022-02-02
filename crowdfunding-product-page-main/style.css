@@ -15,14 +15,43 @@ body{
     font-size: 16px;
     font-family: 'Commissioner', sans-serif;
 }
+/* customs */
+h1{
+    margin: 10px 0;
+    font-size: 1.7em;
+}
+p{
+    color:hsl(0, 0%, 48%);
+    margin-bottom: 30px;
+}
+
+button{
+    background-color:hsl(176, 50%, 47%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 50px;
+    border: none;
+    font-size:15px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    height: 45px;
+    width: 150px;
+}
+button:hover{
+    background-color: hsl(176, 72%, 28%);
+}
+/* The header style */
 header{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     background: url(./images/image-hero-desktop.jpg) no-repeat;
     display: flex;
     justify-content: space-between;
     padding: 50px 100px;
     margin: 0;
-    height: 70vh;
+    height:100%;
 }
 header nav a{
     text-decoration: none;
@@ -30,14 +59,15 @@ header nav a{
     margin-left: 40px;
     font-weight: 700;
 }
+/* the main body style */
 main{
     max-width:600px;
     display: flex;
     flex-direction: column;
-    text-align: center;
     position: absolute;
     top: 50%;
 }
+/* style all sections */
 .section-1, .section-2, .section-3{
     background-color: hsl(0, 0%, 100%);
     box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
@@ -47,14 +77,65 @@ main{
     margin-bottom: 30px;
     font-family: inherit;
 }
+/* the section-1 style */
+.section-1{
+    text-align: center;
+}
 .logo-mastercraft{
     position: absolute;
-} 
-.buttons{
+    top:-30px;
+    left: calc(50% - 30px);
+}
+.button-switch{
     display: flex;
     justify-content: space-between;
 } 
-
+/* lets create the custom switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height:45px;
+    color: hsl(0, 0%, 48%);
+}
+input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider img{
+    position: absolute;
+    height:45px;
+    width:45px;
+    left: 0;
+    bottom:0;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider{
+    background-color: hsl(176, 50%, 47%);
+}
+input:focus + .slider{
+    box-shadow: 0 0 1px hsl(176, 50%, 47%);
+}
+input:checked + .slider img{
+    transform:translateX(110px);
+}
+.slider.round {
+    border-radius:50px;
+}
+/* section-2 */
 .section-2 .numbers{
     display: flex;
     text-align: left;
@@ -87,4 +168,29 @@ small{
     height: 100%;
     background-color:  hsl(176, 50%, 47%);
     border-radius: 20px;
+}
+/* section-3 */
+.section-3 h3{
+    margin-bottom: 20px;
+}
+.section-3 .stand{
+    border: 1px solid hsl(0, 0%, 48%);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.pledge, .left{
+    display: flex;
+    justify-content: space-between;
+}
+.pledge small{
+    color: hsl(176, 50%, 47%);
+}
+.left h4{
+    font-size: 2em;
+}
+.left h4 sup{
+    font-size: 15px;
+    color: hsl(0, 0%, 48%);
+    margin-left: 5px;
 }
