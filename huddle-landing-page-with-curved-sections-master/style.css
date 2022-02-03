@@ -34,7 +34,7 @@ nav{
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-weight: 700;
 }
 h2{
@@ -71,7 +71,8 @@ button{
     text-align: left;
 }
 .details img{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    width: 50px;
 }
 small{
     color: hsl(192, 100%, 9%);
@@ -126,4 +127,5 @@ section img{
 /* section 3*/
 .section-bottom{
     text-align: center;
+    margin-top: 50px;
 }
