@@ -43,6 +43,9 @@ main{
 .information .pageviews{
     text-transform: uppercase;
 }
+.progress-body{
+    position: relative;
+}
 .progress{
     position: relative;
     background-color:hsl(224, 65%, 95%);
@@ -70,7 +73,8 @@ main{
     margin: 40px;
     margin-bottom: 40px;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
 }
 .info-span{
     background-color: hsl(14, 92%, 95%);
@@ -110,7 +114,7 @@ div button{
     display: inline-block;
     width: 50px;
     height: 26px;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 /* Hide default HTML checkbox */
 .switch input {
