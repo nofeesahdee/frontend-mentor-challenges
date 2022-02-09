@@ -54,7 +54,7 @@ const deleteItems = async (id) => {
       <Header />
       <Input onAdd={addTask}/>
       <Tasks tasks={tasks} onDelete={deleteItems}/>
-      <p className="para">Dran and drop to reorder list</p>
+      <p className="para">Drag and drop to reorder list</p>
     </div>
   );
 }

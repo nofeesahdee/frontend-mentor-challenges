@@ -3,7 +3,7 @@ import { useState  } from "react";
 const Input = ({ onAdd }) => {
   const [text, setText] = useState ('')
 
-  const onClick = (e) =>{
+  const inputDetails = (e) =>{
     e.preventDefault()
 
     if(!text){
@@ -17,13 +17,13 @@ const Input = ({ onAdd }) => {
   }
 
   return (
-    <form className='details' onDoubleClick={onClick}>
+    <form className='details' keypress={inputDetails}>
         <label className='label-container'>
-            <input type="checkbox" className='checkbox' />
-            <span className='checkmark'></span>
+          <input type="checkbox" className='checkbox' />
+          <span className='checkmark'></span>
 
-            <input type="text" name="" id="input-box"
-             placeholder="Create a new todo ..." 
+          <input type="text" id="input-box"
+          placeholder="Create a new todo ..." 
           value={text} onChange={(e) => setText(e.target.value)}/>
         </label>
     </form>

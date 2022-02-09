@@ -14,8 +14,10 @@ body{
     background: url(./images/bg-pattern.svg) no-repeat hsl(230, 100%, 99%);
 }
 header{
-    margin-bottom:60px;
+    padding-bottom:80px;
+    padding-top: 20px;
     text-align: center;
+    background: url(./images/pattern-circles.svg) no-repeat center ;
 }
 header h1{
     color: hsl(227, 35%, 25%);
@@ -43,45 +45,56 @@ main{
 .information .pageviews{
     text-transform: uppercase;
 }
-.progress-body{
-    position: relative;
+.range{
+    width: 100%;
+    margin: 0 40px;
 }
-.progress{
-    position: relative;
-    background-color:hsl(224, 65%, 95%);
-    height: 10px;
-    border-radius: 50px;
-    margin: 40px;
-    overflow: hidden;
+.range-input{
+    -webkit-appearance: none;
+    width:85%;
+    height: 15px;
+    border-radius: 15px;  
+    background: hsl(224, 65%, 95%);
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    /* background: -webkit-gradient(linear, left top, right top, color-stop(50%, #a5f3eb), color-stop(50%, #cdd7ee)); */
+    background: linear-gradient(90deg, #a5f3eb 50%, #cdd7ee 50%);
 }
-.progress-bar{
-    position: absolute;
-    background-color:hsl(174, 77%, 80%);
-    height: 100%;
-    width: 50%;
-    border-radius: 50px;
-}
-.bar{
-    position: absolute;
-    width: 50px;
-    height: 50px;
+.range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 45px;
+    height: 45px;
+    background:url(./images/icon-slider.svg) no-repeat  hsl(174, 77%, 80%) center;
+    cursor: pointer;
     border-radius: 50%;
-    border-color:hsl(174, 77%, 80%);
-    left: 50%;
+}
+.range-input::-webkit-slider-thumb:active {
+    background-color:  hsl(174, 86%, 45%);
+}
+.range-input::-webkit-slider-thumb:active, 
+.range-input::-webkit-slider-thumb:hover {
+    -webkit-box-shadow: 0 5px 15px 3px rgba(16, 213, 194, 0.6);
+        box-shadow: 0 5px 15px 3px rgba(16, 213, 194, 0.6);
+}
+.range-input:active{
+    background-color:  hsl(174, 86%, 45%);
 }
 .info{
     margin: 40px;
     margin-bottom: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 .info-span{
     background-color: hsl(14, 92%, 95%);
     color: hsl(15, 100%, 70%);
     padding: 10px;
     border-radius: 20px;
-    font-size: 10px;
+    margin-left: 5px;
+    /* font-size: 10px; */
 }
 .details{
     padding: 40px;
@@ -114,7 +127,7 @@ div button{
     display: inline-block;
     width: 50px;
     height: 26px;
-    margin: 0 10px;
+    margin: 0 30px;
 }
 /* Hide default HTML checkbox */
 .switch input {
@@ -160,4 +173,10 @@ input:checked + .slider {
   }
   .slider.round:before {
     border-radius: 50%;
+  }
+  @media(max-width:700px){
+      main{
+          max-width: 100px;
+          margin: 20px;
+      }
   }

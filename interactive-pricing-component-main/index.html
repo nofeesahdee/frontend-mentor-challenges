@@ -16,27 +16,21 @@
 
   <main>
     <div class="information">
-      <div class="pageviews">Pageviews</div>
-      <div class="price">$ /month</div>
+      <div class="pageviews"></div>
+      <div class="price"></div>
     </div>
-    <div class="progress-body">
-      <div class="progress">
-        <div class="progress-bar"></div>
-        
-      </div>
-      <div class="bar"></div>
-    </div>
-   
+  
+    <label for="range-input" class="range">
+      <input type="range" name="range" class="range-input"  value="16" min="8" max="24" step="4">
+    </label>
+    
     <div class="info">
       <div> Monthly Billing</div>
-      
-     
       <label class="switch">
         <input type="checkbox" class="checkbox">
         <span class="slider round"></span>
       </label>
       <div>Yearly Billing <span class="info-span"> 25% discount</span></div>
-       
     </div>
 
     <div class="details">
@@ -49,7 +43,6 @@
     </div>
   </main>
   
-  
-  
+  <script src="./script.js"></script>
 </body>
 </html>
