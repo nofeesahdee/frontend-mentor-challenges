@@ -38,12 +38,19 @@ main{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .information{
-    margin: 40px;
+    margin: 20px 40px;
     display: flex;
     justify-content: space-between;
 }
 .information .pageviews{
     text-transform: uppercase;
+}
+.price h1{
+    font-size:3rem;
+}
+.price span{
+    font-weight: 400;
+    font-size: 15px;
 }
 .range{
     width: 100%;

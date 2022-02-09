@@ -2,7 +2,6 @@ const pageviews = document.querySelector('.pageviews')
 const price = document.querySelector('.price')
 const range = document.querySelector('.range-input')
 const checkbox = document.querySelector('.checkbox')
-const range = document.querySelector('.range-input')
 
 let views = [
     {
@@ -37,7 +36,7 @@ let views = [
     },
   ];
 
-range.addEventListener('input', handleInput);
+range.addEventListener('input', handleInput());
 
 let yearlyBilling = false;
 let price = views[2].price;
@@ -65,3 +64,10 @@ function handleInput(e) {
     }
   });
 }
+// Display the default slider value
+// price.innerHTML = `<h1>$${range.value} <span>/month</span></h1>`;
+
+// // Update the current slider value (each time you drag the slider handle)
+// range.oninput = function() {
+//   price.innerHTML = `<h1>$${this.value} <span>/month</span></h1>`;
+// }
