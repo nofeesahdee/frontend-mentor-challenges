@@ -115,7 +115,7 @@ main{
 .icons div img{
     margin-right: 10px;
 }
-div button{
+button{
     background-color: hsl(227, 35%, 25%);
     color: hsl(226, 100%, 87%);
     border-radius: 50px;
@@ -127,7 +127,9 @@ div button{
     width: 180px;
     margin-top: 20px;
 }
-
+button:hover{
+    color: hsl(0, 0%, 100%);
+}
 /* custom slider */
 .switch {
     position: relative;
@@ -183,7 +185,7 @@ input:checked + .slider {
   }
   @media(max-width:700px){
       main{
-          max-width: 100px;
-          margin: 20px;
+          max-width:600px;
+          margin:0 40px;
       }
   }
