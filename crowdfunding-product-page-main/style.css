@@ -15,26 +15,43 @@ body{
     font-size: 16px;
     font-family: 'Commissioner', sans-serif;
 }
-/* customs */
+/* headings, paragraph and button */
 h1{
-    margin: 10px 0;
-    font-size: 1.7em;
+    margin: 20px 0;
+    font-size: 2.2em;
+}
+h2{
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+h3{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+h4{
+    font-size: 2em;
+}
+h4 sup{
+    font-size: 15px;
+    color: hsl(0, 0%, 48%);
+    margin-left: 5px;
 }
 p{
     color:hsl(0, 0%, 48%);
     margin-bottom: 30px;
+    font-size: inherit;
+    line-height: 30px;
 }
 button{
     background-color:hsl(176, 50%, 47%);
     color: hsl(0, 0%, 100%);
     border-radius: 50px;
     border: none;
-    font-size:15px;
+    font-size:16px;
     cursor: pointer;
-    font-family: inherit;
-    font-weight: 700;
-    height: 45px;
-    width: 150px;
+    font-family: inherit;    
+    height: 50px;
+    width: 180px;
 }
 button:hover{
     background-color: hsl(176, 72%, 28%);
@@ -145,16 +162,13 @@ input:checked + .slider img{
 }
 .numbers-details:nth-child(2),
 .numbers-details:nth-child(3){
-    border-left: 2px solid hsla(0, 0%, 48%, 0.5);
+    border-left: 1px solid hsla(0, 0%, 48%, 0.5);
     padding-left: 30px;
-    margin-left: 80px;
-}
-.number-details h2{
-    margin-bottom:5px;
+    margin-left: 50px;
 }
 small{
     color:hsl(0, 0%, 48%);
-    font-weight: 700;
+    font-size:18px;
 }
 .progress{
     width: 100%;
@@ -189,17 +203,7 @@ small{
 .pledge small{
     color: hsl(176, 50%, 47%);
 }
-h2{
-    margin-bottom: 20px;
-}
-h4{
-    font-size: 2em;
-}
-h4 sup{
-    font-size: 15px;
-    color: hsl(0, 0%, 48%);
-    margin-left: 5px;
-}
+
 .mahogany h3,.mahogany small,.mahogany p{
     opacity: 0.3;
 }
@@ -209,6 +213,7 @@ h4 sup{
 .mahogany .btn{
     background-color:hsl(0, 0%, 48%);
 }
+/* modal pop up */
 .modal .stand{
     display: flex;
 }
@@ -221,6 +226,7 @@ h4 sup{
     overflow: auto;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.7);
+    transition: 0.4s;
 }
 .modal-box{
     position:absolute;
@@ -230,6 +236,8 @@ h4 sup{
     background-color: hsl(0, 0%, 100%);
     box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
     padding:30px;
+    border-radius: 5px;
+    
 }
 .modal-box .stand{
     padding: 20px;
