@@ -209,9 +209,9 @@ h4 sup{
 .mahogany .btn{
     background-color:hsl(0, 0%, 48%);
 }
-/* .modal .stand{
+.modal .stand{
     display: flex;
-} */
+}
 .main-modal{
     display: none; 
     position: fixed;
