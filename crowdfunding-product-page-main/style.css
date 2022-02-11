@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -74,9 +73,10 @@ nav a{
     color: hsl(0, 0%, 100%);
     margin-left: 40px;
     font-weight: 700;
+    padding-bottom: 5px;
 }
 nav a:hover{
-   transform: scale(1.2);
+   border-bottom: 2px solid hsl(0, 0%, 100%);
 }
 /* the main body style */
 main{
@@ -194,9 +194,13 @@ small{
     margin-bottom:40px;
 }
 .pledge{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 0;
 }
-.pledge, .left{
+.standInline{
+    display: flex;
+}
+.pledge,.left{
     display: flex;
     justify-content: space-between;
 }
@@ -212,6 +216,10 @@ small{
 }
 .mahogany .btn{
     background-color:hsl(0, 0%, 48%);
+    opacity: 0.5;
+}
+.mahogany .btn:hover {
+    cursor: not-allowed;
 }
 /* modal pop up */
 .modal .stand{
@@ -226,7 +234,6 @@ small{
     overflow: auto;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.7);
-    transition: 0.4s;
 }
 .modal-box{
     position:absolute;
@@ -237,25 +244,31 @@ small{
     box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
     padding:30px;
     border-radius: 5px;
-    
+    animation-name: animate;
+    animation-duration: 0.7s;
+}
+@keyframes animate{
+    from {opacity: 0}
+    to {opacity: 1}
 }
 .modal-box .stand{
     padding: 20px;
+    display: flex;
 }
 .modal-box .stand p{
     margin-bottom: 10px;
 }
 .close {
-color: #aaa;
-float: right;
-font-size: 28px;
-font-weight: bold;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 .close:hover,
 .close:focus {
-color: black;
-text-decoration: none;
-cursor: pointer;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 .container {
     display: block;
@@ -280,15 +293,11 @@ cursor: pointer;
     position: absolute;
     top: 0;
     left: 0;
-    height: 24px;
-    width: 24px;
+    height: 20px;
+    width: 20px;
     background-color: #fff;
     border: 1px solid hsla(0, 0%, 48%,0.7);
     border-radius: 50%;
-}
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
-    background-color: #ccc;
 }
 /* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
@@ -300,13 +309,14 @@ cursor: pointer;
 .container input:checked ~ .checkmark:after {
     display: block;
 }
-  
-  /* Style the indicator (dot/circle) */
-  .container .checkmark:after {
-    top: 4px;
-    left: 4px;
-    width: 14px;
-    height: 14px;
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
-    background: hsl(176, 72%, 28%);
-  }
+    background: hsl(176, 50%, 47%);
+    transition: .4s ease;
+}
+  
