@@ -68,25 +68,35 @@ main{
 .youtube{
     border-top: 5px solid  hsl(348, 97%, 39%);
 }
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .logo ion-icon{
     font-size: 18px;
 }
+.logo small{
+    align-self: center;
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
 .fb{
     color:hsl(208, 92%, 53%);
+    font-size: 18px;
 }
 .tw{
     color:hsl(203, 89%, 53%);
+    font-size: 18px;
 }
 .insta{
     background-image:linear-gradient(to top,hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+    font-size: 18px;
 }
 .yt{
     color:hsl(348, 97%, 39%);
-    margin-top: 5px;
+    font-size: 18px;
 }
-/* .logo small{
-    padding-top: 0;
-} */
 .total-followers{
     margin: 25px;
 }
@@ -101,15 +111,20 @@ main{
     color:hsl(163, 72%, 41%);
     font-size: 14px;
     font-weight: 700;
-}
-.follower-count ion-icon{
-    color:hsl(163, 72%, 41%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .youtube .follower-count{
     color:hsl(356, 69%, 56%);
 }
-.youtube .follower-count ion-icon{
+.up{
+    color:hsl(163, 72%, 41%);
+    margin-right: 5px;
+}
+.down{
     color:hsl(356, 69%, 56%);
+    margin-right: 5px;
 }
 section{
     display: flex;
@@ -147,4 +162,14 @@ section h3{
 }
 .numbers h4{
     font-size: 1.7em;
+}
+.numbers span{
+    color:hsl(163, 72%, 41%);
+}
+.numbers .red{
+    color:hsl(356, 69%, 56%);
+}
+span{
+    font-size: 14px;
+    align-self: center;
 }
