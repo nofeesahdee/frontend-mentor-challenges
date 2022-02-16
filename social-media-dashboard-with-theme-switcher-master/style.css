@@ -71,16 +71,16 @@ main{
 .logo ion-icon{
     font-size: 18px;
 }
-.facebook .logo ion-icon{
+.fb{
     color:hsl(208, 92%, 53%);
 }
-.twitter .logo ion-icon{
+.tw{
     color:hsl(203, 89%, 53%);
 }
-.instagram .logo ion-icon{
+.insta{
     background-image:linear-gradient(to top,hsl(37, 97%, 70%),hsl(329, 70%, 58%));
 }
-.youtube .logo ion-icon{
+.yt{
     color:hsl(348, 97%, 39%);
     margin-top: 5px;
 }
@@ -133,6 +133,18 @@ section h3{
     width:300px;
     background-color:hsl(228, 28%, 20%);
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     border-radius: 5px;
+}
+.data{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.numbers{
+    display: flex;
+    justify-content: space-between;
+}
+.numbers h4{
+    font-size: 1.7em;
 }
