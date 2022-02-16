@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(to bottom,hsl(232, 19%, 15%),hsl(230, 17%, 14%));
+    color:hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+}
+header{
+    max-width: 1400px;
+    width: 100%;
+    padding:30px 50px;
+}
+header small{
+    color: hsl(228, 12%, 44%);
+    font-size: 14px;
+    font-weight: 700;
+}
+.form-control{
+    float: right;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width:1400px;
+    
+}
+.nathan{ 
+    margin: 10px;
+    max-width: 100%;
+    width:300px;
+    height: 250px ;
+    background-color:hsl(228, 28%, 20%);
+    text-align: center;
+    padding: 20px;
+}
