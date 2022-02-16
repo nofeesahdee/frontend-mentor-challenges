@@ -110,7 +110,6 @@ main{
 .follower-count{
     color:hsl(163, 72%, 41%);
     font-size: 14px;
-    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
