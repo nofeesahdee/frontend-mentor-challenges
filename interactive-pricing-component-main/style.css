@@ -44,14 +44,23 @@ main{
 }
 .information .pageviews{
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+.price{
+    display: flex;
+    align-items: center;
 }
 .price h1{
-    font-size:3rem;
+    font-size:2.5em;
 }
 .price span{
     font-weight: 400;
-    font-size: 15px;
+    margin-left: 5px;
+    font-size: 18px;
 }
+
 .range{
     width: 100%;
     margin: 0 40px;
@@ -101,7 +110,6 @@ main{
     padding: 10px;
     border-radius: 20px;
     margin-left: 5px;
-    /* font-size: 10px; */
 }
 .details{
     padding: 40px;
@@ -184,8 +192,25 @@ input:checked + .slider {
     border-radius: 50%;
   }
   @media(max-width:700px){
-      main{
-          max-width:600px;
-          margin:0 40px;
-      }
+    main{
+        width:350px;
+        margin:0 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .information{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+    }    
+    .info{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .switch{
+        margin: 30px 0;
+    }
   }

@@ -1,5 +1,5 @@
 const pageviews = document.querySelector('.pageviews')
-const price = document.querySelector('.price')
+const priceAmount = document.querySelector('.price')
 const range = document.querySelector('.range-input')
 const checkbox = document.querySelector('.checkbox')
 
@@ -36,20 +36,51 @@ let views = [
     },
   ];
 
+  
+let yearlyBilling = false;
+let price = views[2].price;
+let discountPrice = views[2].discount;
 
-// //Display the default slider value
+function handleInput(e) {
+  let input = parseInt(e.target.value);
 
-//     price.innerHTML = `<h1>$${range.value} <span>/month</span></h1>`;
-// // Update the current slider value (each time you drag the slider handle)
-// range.oninput = function() {
-//   price.innerHTML = `<h1>$${this.value} <span>/month</span></h1>`;
-// }
+  views.forEach((item, index) => {
+    let totalViews = item.pageview;
+    let bg = index * 25;
 
-// // views.forEach(view,{
-    
-// //     pageviews.innerHTML = `<h3>${views.pageview}</h3>`
-// // })
+    if (item.price === input) {
+      price = item.price;
+      discountPrice = item.discount;
 
-// checkbox.addEventListener('checked', {
+      priceAmount.innerHTML = `<h1>$${price}.00</h1><span> /month</span>`;
+      pageviews.textContent = `${totalViews} pageviews`;
+      range.style.background = `linear-gradient(90deg,
+        hsl(174, 76%, 80%) ${bg}%,
+       hsl(223, 50%, 87%) ${bg}%)`;
+    }
 
-// })
+    if (yearlyBilling) {
+      priceAmount.innerHTML = `<h1>$${discountPrice}.00</h1><span> /year</span>`;
+    }
+  });
+}
+
+function handleClick(checkbox) {
+  yearlyBilling = checkbox.currentTarget.checked;
+  
+  if (yearlyBilling) {
+    priceAmount.innerHTML = `<h1>$${discountPrice}.00</h1><span> /year</span>`;
+    pageviews.textContent = `${totalViews} pageviews`;
+  } else {
+    priceAmount.innerHTML = `<h1>$${price}.00</h1><span> /month</span>`;
+    pageviews.textContent = `${totalViews} pageviews`;
+
+  }
+}
+
+checkbox.addEventListener('click', handleClick);
+
+range.addEventListener('input', e => {
+  handleInput(e);
+});
+//
