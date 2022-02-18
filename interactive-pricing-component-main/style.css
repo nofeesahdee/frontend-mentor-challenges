@@ -208,9 +208,18 @@ input:checked + .slider {
     .info{
         display: flex;
         flex-direction: column;
-       
     }
     .switch{
-        margin: 30px 0;
+        margin: 20px 0;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    header h1{
+        color: hsl(227, 35%, 25%);
+        margin: 10px 0;
+        font-size: 1.5em;
     }
   }
