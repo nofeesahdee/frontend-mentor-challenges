@@ -29,6 +29,7 @@ small{
     color: hsl(228, 12%, 44%);
     font-weight: 700;
     font-size: 14px;
+    
 }
 .form-control span{
     font-size: 14px;
@@ -113,6 +114,7 @@ main{
 .follower-count{
     color:hsl(163, 72%, 41%);
     font-size: 14px;
+    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,6 +176,7 @@ section h3{
 span{
     font-size: 14px;
     align-self: center;
+    font-weight: 700;
 }
 /* custom switch */
 .switch {
@@ -228,10 +231,7 @@ body.light-mode{
     color:  hsl(230, 17%, 14%);
     transition: .4s ease;
 }
-.nathan.light-mode{ 
-    background-color:hsl(227, 47%, 96%);
-}
-.overview .light-mode{ 
+.lighter{ 
     background-color:hsl(227, 47%, 96%);
 }
 @media(max-width:400px){
