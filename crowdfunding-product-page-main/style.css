@@ -309,7 +309,7 @@ small{
     position: absolute;
     display: none;
 }
-  /* Show the indicator (dot/circle) when checked */
+/* Show the indicator (dot/circle) when checked */
 .container .checkbox:checked ~ .checkmark:after {
     display: block;
 }
@@ -323,4 +323,28 @@ small{
     background: hsl(176, 50%, 47%);
     transition: .4s ease;
 }
-  
+.selected-pledge{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid hsla(0, 0%, 48%, 0.5);
+    padding-top: 30px;
+    display: none;
+}
+.selected-pledge p{
+    align-self: center;
+}
+.selected-amount,.selected-btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    outline: none;
+}
+.selected-amount{
+    border: 1px solid hsla(0, 0%, 48%, 0.5);
+    font-size: 16px;
+    padding-left: 10px;
+}
+.selected-amount:focus,.selected-amount:hover{
+    border: 2px solid hsl(176, 72%, 28%);
+}
+
