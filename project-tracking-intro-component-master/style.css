@@ -11,11 +11,10 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    width: 100%;
+   
     font-size: 18px;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: 'Barlow', sans-serif;
-    /* background-color:hsl(207, 33%, 95%); */
 }
 header{
     position: absolute;
@@ -32,19 +31,27 @@ nav a{
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700;
     margin-left: 20px;
-    font-size: 18px;
     text-transform: uppercase;
     width: 400px;
+    letter-spacing: 1px;
 }
 .dot{
     width: 10px;
     height: 10px;
     background-color: hsl(231, 7%, 65%);
     border-radius: 50%;
+    margin-left: 20px;
+    display: inline-block;
+}
+nav a:hover{
+    border-bottom: 2px solid hsl(230, 29%, 20%);
 }
 .login{
     color:hsl(231, 7%, 65%);
-    margin-left: 40px;
+    margin-left: 30px;
+}
+.login:hover{
+    border-bottom: 2px solid hsl(231, 7%, 65%);
 }
 .bg-square {
     width: 100%;
@@ -53,8 +60,138 @@ nav a{
     background-color:hsl(207, 33%, 95%);
     border-bottom-left-radius: 60px;
     z-index: -1;
-    top: 0px;
+    top: 0;
     left: 50%;
     transform: translate(2%, 0);
-  }
+}
+main{
+    display: flex;
+    padding-top: 150px;
+    width: 100%;
+    overflow-x: hidden;
+}
+.left-side{
+    padding-left: 100px;
+    align-self: center;
+}
+.dashboard{
+    color:hsl(231, 7%, 65%);
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    font-size: inherit;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.dashboard small{
+    background-color:hsl(230, 29%, 20%);
+    border-radius: 50px;
+    padding: 10px 15px;
+    font-weight: 700;
+}
+h1{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 3em;
+    text-transform: uppercase;
+    color:hsl(230, 29%, 20%);
+    margin: 25px 0;
+}
+p{
+    color:hsl(230, 11%, 40%);
+    width: 280px;
+    margin-bottom: 50px;
+}
+button{
+    background-color: hsl(0, 100%, 68%);
+    border: 0;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-right:5px;
+    color:hsl(207, 33%, 95%);
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+span{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:hsl(231, 7%, 65%);
+    font-size: 14px;
+}
+.right-side{
+    margin-right: -300px;
+}
+.navigation{
+    display: none;
+}
+nav.active{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 90%;
+    top: 70px;
+    left: 20px;
+    border-radius: 5px;
+    height: 250px;
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+nav.active .dot{
+    display: none;
+}
+nav.active a{
+    margin-bottom: 20px;
+}
+nav.active .login{
+    border-top: 1px solid hsl(230, 11%, 40%);
+    margin-bottom: 0;
+}
+@media(max-width:900px){
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    header{
+        padding: 20px;
+        width: 100%;
+    }
+    nav{
+        display: none;
+    }
+    main{
+        width: 100%;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 120px 20px 0 20px;
+    }
+    .left-side{
+        padding-left: 0px;
 
+        margin-top: 70px;
+    }
+    h1{
+        font-size: 2em;
+    }
+    .right-side{
+        margin-right: 0;
+        width: 100%;
+    }
+    .right-side img{
+        width: 100%;
+    }
+    .navigation{
+        display:block;
+    }
+    .hamburger{
+    display:block;
+    }
+    .close{
+        display: none;
+    } 
+}
