@@ -84,7 +84,7 @@ main{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top:50%;
+    top:30%;
 }
 /* style all sections */
 .section-1, .section-2, .section-3{
