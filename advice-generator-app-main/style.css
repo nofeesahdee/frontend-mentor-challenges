@@ -12,7 +12,7 @@ body{
     font-family: 'Manrope', sans-serif;
     background-color:hsl(218, 23%, 16%);
 }
-header{
+main{
     position: relative;
     width:40%;
     background-color:hsl(217, 19%, 24%);
@@ -58,7 +58,7 @@ h1{
     display: none;
 }
 @media (max-width:800px){
-    header{
+    main{
         width: 90%;
     }
 }
