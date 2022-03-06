@@ -137,3 +137,9 @@ header{
 .links a:hover{
   color: hsl(220, 98%, 61%);
 }
+.dark-light-theme{
+  cursor: pointer;
+}
+.icon-sun{
+  display: none;
+}

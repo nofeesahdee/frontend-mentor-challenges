@@ -1,23 +1,20 @@
-import { useState  } from "react";
+import { useState } from "react";
 
 const Input = ({ onAdd }) => {
   const [text, setText] = useState ('')
 
   const inputDetails = (e) =>{
     e.preventDefault()
-
-    if(!text){
-      alert('Please enter a task')
-      return
-    }
-
+    // if(!text){
+    //   alert('Please enter a task')
+    //   return
+    // }
     onAdd({ text })
-
     setText('')
   }
 
   return (
-    <form className='details' keypress={inputDetails}>
+    <form className='details' onKeyDown={inputDetails}>
         <label className='label-container'>
           <input type="checkbox" className='checkbox' />
           <span className='checkmark'></span>

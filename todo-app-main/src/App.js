@@ -18,12 +18,15 @@ function App() {
   const fetchTasks = async () => {
     const res = await fetch('http://localhost:5000/tasks')
     const data = await res.json()
+    
+    console.log(data)
     return data
+  
   }
 
 // Add Items
 const addTask = async (task) => {
-  const res = await fetch(`http://localhost:5000/tasks/`,{
+  const res = await fetch(`http://localhost:5000/tasks`,{
     method: 'POST',
     headers:{
       'Content-type': 'application/json'
@@ -45,8 +48,7 @@ const deleteItems = async (id) => {
     method: 'DELETE'
   })
 
- setTasks(tasks.filter((task) => task.id !== 
- id))
+ setTasks(tasks.filter((task) => task.id !== id))
 }
 
   return (
