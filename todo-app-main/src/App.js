@@ -16,17 +16,14 @@ function App() {
 
 // Fetch Tasks
   const fetchTasks = async () => {
-    const res = await fetch('http://localhost:5000/tasks')
+    const res = await fetch('http://localhost:8000/tasks')
     const data = await res.json()
-    
-    console.log(data)
     return data
-  
   }
 
 // Add Items
 const addTask = async (task) => {
-  const res = await fetch(`http://localhost:5000/tasks`,{
+  const res = await fetch(`http://localhost:8000/tasks`,{
     method: 'POST',
     headers:{
       'Content-type': 'application/json'
@@ -44,18 +41,22 @@ const addTask = async (task) => {
 
 // Delete Items
 const deleteItems = async (id) => {
-  await fetch(`http://localhost:5000/tasks/${id}`,{
+  await fetch(`http://localhost:8000/tasks/${id}`,{
     method: 'DELETE'
   })
 
  setTasks(tasks.filter((task) => task.id !== id))
 }
 
+function strikethrough(){
+  console.log("strike")
+}
+
   return (
     <div className="container">
       <Header />
       <Input onAdd={addTask}/>
-      <Tasks tasks={tasks} onDelete={deleteItems}/>
+      <Tasks tasks={tasks} onDelete={deleteItems} onStrike ={strikethrough}/>
       <p className="para">Drag and drop to reorder list</p>
     </div>
   );

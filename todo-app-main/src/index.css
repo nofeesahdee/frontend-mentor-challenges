@@ -41,7 +41,7 @@ header{
   width: 100%;
   height:50px;
   background-color: hsl(235, 24%, 19%);
-  padding: 10px;
+  padding: 15px;
   padding-left: 60px;
   font-size: 18px;
   border-radius: 5px;
@@ -63,19 +63,20 @@ header{
 }
 .task{
   width: 100%;
-  padding:25px;
+  padding:15px;
   border-bottom: 1px solid hsl(234, 11%, 52%);
 }
 .task p{
   display: flex;
   justify-content: space-between;
-  padding-left: 40px;
+  align-items: center;
+  padding-left: 60px;
   cursor: pointer;
 }
 .task p:hover{
   color: hsl(236, 33%, 92%);
 }
-.task p:hover img{
+.task:hover img{
   display: inline;
 }
 .task p img{
@@ -128,6 +129,9 @@ header{
 /* Show the indicator when checked */
 .container .checkbox:checked ~ .checkmark:after {
   display: block;
+}
+.task .checkmark {
+  left: 10px;
 }
 .links a{
   text-decoration: none;

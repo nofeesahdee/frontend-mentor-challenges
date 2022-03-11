@@ -5,16 +5,16 @@ const Input = ({ onAdd }) => {
 
   const inputDetails = (e) =>{
     e.preventDefault()
-    // if(!text){
-    //   alert('Please enter a task')
-    //   return
-    // }
+    if(!text){
+      alert('Please enter a task')
+      return
+    }
     onAdd({ text })
     setText('')
   }
 
   return (
-    <form className='details' onKeyDown={inputDetails}>
+    <form className='details' onKeyUp={inputDetails}>
         <label className='label-container'>
           <input type="checkbox" className='checkbox' />
           <span className='checkmark'></span>
