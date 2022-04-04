@@ -17,13 +17,13 @@ body{
 }
 /* HEADER */
 header{
-    position:fixed;
+    position:absolute;
     top: 0;
     left: 0;
     display: flex;
     justify-content: space-between;
     background-color: hsl(0, 0%, 100%);
-    padding: 30px 150px;
+    padding: 30px 100px;
     width: 100%;
 }
 nav a{
@@ -70,7 +70,7 @@ section{
     color: hsl(0, 0%, 100%);
     background-color:hsl(270, 9%, 17%);
     justify-content: space-between;
-    padding: 50px 150px;
+    padding: 50px 100px;
     align-items: center;
     background-image:url(./images/bg-pattern-intro-right-desktop.svg) ;
     background-repeat: no-repeat;
@@ -78,6 +78,8 @@ section{
 }
 .left-side{
     margin-right: 50px;
+    transform: translateX(-50%);
+    transition: transform 500ms ease-in;
 }
 .line{
     border: 1px solid #fff;
@@ -105,13 +107,19 @@ section p{
 .right-side .image-desktop{
     margin-top: 100px;
     margin-bottom: -150px;
+    transform: translateX(50%);
+    transition: transform 500ms ease-in;
 }
 .right-side .image-mobile{
    display: none;
 }
+.left-side.appear,
+.right-side .image-desktop.appear{
+    transform: translateX(0);
+}
 /* ARTICLE */
 article{
-    padding:250px 150px 150px 150px;
+    padding:250px 100px 150px 100px;
 }
 .line2{
     border: 1px solid hsl(216, 30%, 68%);
@@ -145,6 +153,13 @@ h2{
     color:hsl(216, 30%, 68%);
     line-height: 25px;
 }
+.fade-in{
+    opacity: 0;
+    transition: opacity 450ms ease-in;
+}
+.fade-in.appear{
+    opacity: 1;
+}
 .findout{
     display: flex;
     justify-content: space-between;
@@ -168,7 +183,7 @@ h2{
 footer{
     background-color: hsl(0, 0%, 98%);
     width: 100%;
-    padding:50px 150px;
+    padding:50px 100px;
     background-image: url(./images/bg-pattern-footer-desktop.svg);
     background-position: top left;
     background-repeat: no-repeat;
