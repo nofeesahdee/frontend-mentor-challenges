@@ -1,7 +1,9 @@
 import { useState } from "react";
+import useFetch from "../useFetch";
 
-const Input = ({ onAdd }) => {
-  const [text, setText] = useState ('')
+const Input = () => {
+  const [text, setText] = useState ('');
+  const { addTask } = useFetch();
 
   const inputDetails = (e) =>{
     e.preventDefault()
@@ -9,21 +11,23 @@ const Input = ({ onAdd }) => {
       alert('Please enter a task')
       return
     }
-    onAdd({ text })
+    addTask({ text })
     setText('')
   }
 
   return (
-    <form className='details' onKeyUp={inputDetails}>
+    <form className='details' onSubmit={inputDetails}>
         <label className='label-container'>
           <input type="checkbox" className='checkbox' />
           <span className='checkmark'></span>
 
           <input type="text" id="input-box"
-          placeholder="Create a new todo ..." 
-          value={text} onChange={(e) => setText(e.target.value)}/>
+            placeholder="Create a new todo ..." 
+            value={text} onChange={(e) => setText(e.target.value)}
+          />
         </label>
     </form>
+    
   )
   
 };

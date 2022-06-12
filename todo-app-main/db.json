@@ -1,12 +1,16 @@
 {
   "tasks": [
     {
-      "id": 2,
-      "text": "10 minutes medication"
+      "text": "go to modrasah",
+      "id": 8
     },
     {
-      "text": "Buy Food",
-      "id": 4
+      "text": "eat indomie for afternoon food",
+      "id": 9
+    },
+    {
+      "text": "go to school",
+      "id": 10
     }
   ]
 }
