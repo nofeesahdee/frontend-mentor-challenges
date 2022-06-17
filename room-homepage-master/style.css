@@ -141,6 +141,9 @@ li:hover{
 .hamburger{
     display:none;
 }
+.icon-close{
+    display: none;
+}
 @media (max-width: 768px) { 
     .top{
         display: flex;
@@ -152,12 +155,25 @@ li:hover{
     }
     .ul.active{
         display:flex;
+        justify-content:space-around;
+        align-items: center;
         background-color: #ffffff;
         color: #000000;
         position: absolute;
-        top: 0;
-        left: 0;
-        width:375px;
+        top: -40px;
+        left: -40px;
+        height: 70px;
+        width: 375px;
+        margin: 0;
+        padding: 0;
+    }
+    .ul.active .icon-close{
+        display: block;
+        /* margin-right: 30px; */
+    }
+    li{
+        margin-left: 0px;
+        padding-bottom:0px;
     }
     .desktop-image img{
         display: none;
@@ -178,7 +194,7 @@ li:hover{
     .prev{
         position: absolute;
         top:-64px;
-        left:230px;
+        left:226px;
     }
     .next{
         position: absolute;

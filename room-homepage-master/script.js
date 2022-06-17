@@ -38,8 +38,12 @@ function showSlides(n) {
 }
 
 const hamburger = document.querySelector('.hamburger')
+const close = document.querySelector('.icon-close')
 const nav = document.querySelector('.ul')
 
 hamburger.addEventListener("click", function(){
-  nav.classList.toggle("active")
+  nav.classList.add("active")
+})
+close.addEventListener("click", function(){
+  nav.classList.remove("active")
 })
