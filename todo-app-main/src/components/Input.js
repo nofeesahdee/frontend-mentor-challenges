@@ -27,7 +27,6 @@ const Input = () => {
           />
         </label>
     </form>
-    
   )
   
 };

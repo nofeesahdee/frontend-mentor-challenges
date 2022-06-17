@@ -32,7 +32,7 @@ const Tasks = () => {
           onDragOver={(e) => e.preventDefault()}
           onDragStart={(e) => dragStart(e, index)}
           onDragEnter={(e) => dragEnter(e, index)}
-          onDragEnter={drop}
+          onDrop={drop}
           draggable
         >
           <label className='label-container'>
