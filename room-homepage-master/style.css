@@ -9,7 +9,7 @@ body{
     font-family: 'League Spartan', sans-serif;
     flex-direction: column;
 }
-.top{
+header{
     display: flex;
 }
 .right-side{
@@ -118,10 +118,10 @@ li:hover{
 .slide:hover{
     background-color: hsla(0, 0%, 0%, 0.7);
 }
-.bottom{
+footer{
     display: flex;
 }
-.bottom .middle{
+.middle{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,7 +145,7 @@ li:hover{
     display: none;
 }
 @media (max-width:1000px) { 
-    .top{
+    header{
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -169,7 +169,6 @@ li:hover{
     }
     .ul.active .icon-close{
         display: block;
-        /* margin-right: 30px; */
     }
     li{
         margin-left: 0px;
@@ -194,22 +193,22 @@ li:hover{
     .prev{
         position: absolute;
         top:-64px;
-        left:226px;
+        left:232px;
     }
     .next{
         position: absolute;
         top:-64px;
-        left:300px;
+        left:305px;
     }
-    .bottom{
+    footer{
         display: flex;
         flex-direction: column;
     }
-    .bottom .middle{
+    .middle{
         padding: 60px 30px;
         width: 100%;
     }
-    .bottom img{
+    footer img{
         width: 100%;
     }
     .hamburger{
