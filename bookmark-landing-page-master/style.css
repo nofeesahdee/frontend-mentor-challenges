@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1440px;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 120px;
+    color:hsl(229, 8%, 60%);
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: inherit;
+}
+.nav-list ul{
+    display:flex;
+}
+.nav-list ul li{
+   list-style:none;
+   padding: 0 15px;
+   cursor: pointer;
+}
+button{
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size:18px;
+}
+.btn{
+    background-color:  hsl(0, 94%, 66%);
+    color:#fff;
+    margin-left:20px;
+    text-transform: uppercase;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0 100px 120px;
+}
+.hero-left-side{
+    width:50%;
+    padding-right:100px;
+}
+.hero-left-side h1{
+   font-size: 2.5em;
+   color: hsl(229, 31%, 21%);
+}
+p{
+    color:hsl(229, 8%, 60%);
+    line-height: 30px;
+    letter-spacing:1px;
+    padding-bottom: 20px;
+}
+.btn-blue{
+    background-color: hsl(231, 69%, 60%);
+    box-shadow:4px 7px 12px 0px hsla(231, 69%, 60%, 0.2);
+    color:#fff;
+}
+.btn-firefox{
+    box-shadow:4px 7px 12px 0px hsla(0, 0%, 0%, 0.2);
+    background-color:#fff;
+    margin-left: 15px;
+}
+.hero-right-side{
+    width:50%;
+    position: relative;
+}
+.hero-right-side {
+    padding-right: 50px;
+}
+.hero-right-side::before{
+    content:'';
+    background-image: linear-gradient(hsl(231, 69%, 60%), hsl(231, 69%, 60%));
+    height:22rem;
+    width:32rem;
+    position: absolute;
+    top:40%;
+    right: 0;
+    border-bottom-left-radius: 40%;
+    border-top-left-radius: 40%;
+    z-index: -1;
+}
+.section-feature, 
+.section-download,
+.section-faq{
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    flex-direction: column;
+}
+.feature,
+.download,
+.faq{
+    max-width: 550px;
+}
+.info{
+    display: flex;
+    border-bottom: 2px solid hsla(229, 8%, 60%, 0.3);
+    justify-content: space-between;
+    margin: 40px auto;
+    padding:0 40px 25px 40px;
+    color: hsl(229, 8%, 60%);
+    max-width: 700px;
+}
+.info span{
+    cursor: pointer;
+}
+.details-info{
+    text-align: left;
+    align-items: center;
+    display: none;
+    padding: 50px 120px 50px 0;
+}
+.details-info.active{
+    display: flex;
+}
+.details-info-text{
+    width: 50%;
+    padding-left:100px;
+}
+.info-left-side{
+    width:50%;
+    padding:0 0 50px 120px;
+    position: relative;
+}
+.info-left-side::before{
+    content:'';
+    background-image: linear-gradient(hsl(231, 69%, 60%), hsl(231, 69%, 60%));
+    height:22rem;
+    width:32rem;
+    position: absolute;
+    top:30%;
+    left: 0;
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 40%;
+    z-index: -1;
+}
+h2,h3,h4,h5,h5{
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+/* .info span.active{
+    border-bottom: 5px solid  hsl(0, 94%, 66%);
+    padding-bottom: 40px;
+} */
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width:70%;
+}
+.card{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow:  4px 7px 12px 0px hsla(0, 0%, 0%, 0.2);
+    width: 300px;
+    padding: 70px 0;
+    height: 400px;
+}
+.card button{
+
+}
+.card-2{
+    margin-top:50px;
+}
+.card-3{
+    margin-top:100px;
+}
+.details{
+    width: 500px;
+    border-bottom: 2px solid hsla(229, 8%, 60%, 0.3);
+}
+.questions{
+    position: relative;
+
+}
+.questions p{
+    text-align: left;
+    padding: 0;
+}
+.img-arrow{
+    position: absolute;
+    top:10px;
+    right:10px;
+    cursor: pointer;
+}
+.answer{
+    display: none;
+    height: 0;
+}
+.section-faq button{
+    margin-top: 40px;
+}
