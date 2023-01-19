@@ -25,7 +25,7 @@ header nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 120px;
+    padding: 50px 100px;
     color:hsl(229, 8%, 60%);
 }
 .nav-list{
@@ -59,15 +59,14 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0 100px 120px;
+    padding: 50px 0 100px 100px;
 }
 .hero-left-side{
     width:50%;
-    padding-right:100px;
+    padding-right:80px;
 }
 .hero-left-side h1{
    font-size: 2.5em;
-   color: hsl(229, 31%, 21%);
 }
 p{
     color:hsl(229, 8%, 60%);
@@ -87,10 +86,8 @@ p{
 }
 .hero-right-side{
     width:50%;
-    position: relative;
-}
-.hero-right-side {
     padding-right: 50px;
+    position: relative;
 }
 .hero-right-side::before{
     content:'';
@@ -106,7 +103,8 @@ p{
 }
 .section-feature, 
 .section-download,
-.section-faq{
+.section-faq,
+.section-contact{
     padding: 80px 0;
     display: flex;
     justify-content: center;
@@ -135,18 +133,18 @@ p{
     text-align: left;
     align-items: center;
     display: none;
-    padding: 50px 120px 50px 0;
+    padding: 50px 100px 50px 0;
 }
 .details-info.active{
     display: flex;
 }
 .details-info-text{
     width: 50%;
-    padding-left:100px;
+    padding-left:80px;
 }
 .info-left-side{
     width:50%;
-    padding:0 0 50px 120px;
+    padding-left:50px;
     position: relative;
 }
 .info-left-side::before{
@@ -164,6 +162,10 @@ p{
 h2,h3,h4,h5,h5{
     letter-spacing: 1px;
     font-weight: 500;
+    color: hsl(229, 31%, 21%);
+}
+h5{
+    font-size:1.2em;
 }
 /* .info span.active{
     border-bottom: 5px solid  hsl(0, 94%, 66%);
@@ -198,11 +200,11 @@ h2,h3,h4,h5,h5{
 }
 .questions{
     position: relative;
-
 }
 .questions p{
     text-align: left;
     padding: 0;
+    color: hsl(229, 31%, 21%);
 }
 .img-arrow{
     position: absolute;
@@ -211,9 +213,95 @@ h2,h3,h4,h5,h5{
     cursor: pointer;
 }
 .answer{
-    display: none;
-    height: 0;
+    font-size: 15px;
+    color: hsl(237, 12%, 33%);
+    max-height: 0;
+    overflow: hidden;
+    line-height: 25px;
+    text-align: left;
+    margin-bottom: 10px;
+    transition: max-height 1.4s ease;
+}
+.answer small{
+    letter-spacing: 1px;
 }
 .section-faq button{
-    margin-top: 40px;
+    margin: 50px 0;
+}
+.details.active .answer{
+    max-height: 400px;
+    animation: fade 1s ease-in-out;
+}
+.details.active img{
+    transform: rotate(180deg);
+    transition: transform .5s ease-in;
+}
+.section-contact{
+    background-color: hsl(231, 69%, 60%);
+    color: #fff;
+}
+small{
+    text-transform: uppercase;
+    letter-spacing:10px;
+}
+h6{
+    font-size: 2em;
+    max-width: 500px;
+    letter-spacing: 1px;
+    margin: 40px 0;
+    line-height:50px;
+}
+input{
+    padding: 15px;
+    width: 300px;
+    border-radius: 5px;
+    border: 0;
+    color:hsl(229, 8%, 60%);
+}
+input:focus{
+    outline: none;
+}
+form button{
+    background-color: hsl(0, 94%, 66%);
+    color: #fff;
+}
+footer{
+    background-color: hsl(229, 31%, 21%);
+    color: #fff;
+    width: 100%;
+    padding: 80px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer ul{
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+footer ul li{
+    list-style: none;
+}
+.bookmark{
+    display: flex;
+    align-items: center;
+}
+ion-icon{
+    font-size:30px;
+    margin-left:10px;
+}
+@keyframes fade{
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width:1000px){
+
 }
